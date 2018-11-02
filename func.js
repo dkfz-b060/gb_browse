@@ -1073,3 +1073,12 @@ function get_data_avail_map()
 
 	return avail;
 }
+
+function onclick_btn_chr_exp18( btn )
+{
+	var embed_id = document.getElementById("chkbox_new_page_chr_exp18").checked ? null : "embed_chr_exp18"; // embed or null
+	var use_hg38 = false; //document.getElementById("chkbox_hg38_chr_exp18").checked
+	visualize_data( use_hg38 ? [data_chr_exp18_hg38] : [data_chr_exp18], [{"":""}], embed_id, false, use_hg38 ? 'hg38' : 'hg19' );
+    return true;
+}
+

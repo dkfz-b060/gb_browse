@@ -98,15 +98,9 @@
           <h1>Chromatin states</h1>
             <h3>Roadmap 18 states model</h3>
 	    <div>
-                <select class="ddl_eid" id="ddl_eid_rep_hist_align" onchange="onchange_ddl_eid_rep_hist_align(this);">
-                  <option>Choose an epigenome</option>
-                </select>
-                or
-                <select class="ddl_assay" id="ddl_assay_rep_hist_align" onchange="onchange_ddl_assay_rep_hist_align(this);">
-                  <option>Choose an assay</option>
-                </select>
-                  <br><input type="checkbox" id="chkbox_new_page_align"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><div id=embed_rep_hist_align style="margin:20px;border:solid 2px green;display:none;" ></div>
+                <button id="btn_chr_exp18" onclick="onclick_btn_chr_exp18(this);"> Visualize</button>
+                  <br><input id="chkbox_new_page_chr_exp18" type="checkbox">Open in a new page (deactivate pop-up blockers)</input>
+                <br><div id="embed_chr_exp18" style="margin:20px;border:solid 2px green;display:none;"></div>
 	    </div>
           <a name="DNAmethylation"></a>
           <h1>DNA methylation</h1>
