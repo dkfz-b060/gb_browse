@@ -953,7 +953,7 @@ function concat_data()	// prepare to gather data to visualize
 		data.push( data_rep_hist_fc );
 		data.push( data_rep_hist_fc_uc );
 	}
-
+/*
 	// if default peak is selected concat all peak data
 	if ( document.getElementById("chkbox_vis_rep_hist_dpeak").checked ) {
 		data.push( data_rep_hist_npeak );
@@ -967,18 +967,18 @@ function concat_data()	// prepare to gather data to visualize
 			data.push( data_rep_hist_npeak );
 			data.push( data_rep_hist_npeak_uc );
 		}
-/*
+
 		if ( document.getElementById("chkbox_vis_rep_hist_bpeak").checked ) {
 			data.push( data_rep_hist_bpeak );
 			data.push( data_rep_hist_bpeak_uc );
 		}
-*/
+
 		if ( document.getElementById("chkbox_vis_rep_hist_gpeak").checked ) {
 			data.push( data_rep_hist_gpeak );
 			data.push( data_rep_hist_gpeak_uc );
 		}
 	}
-
+*/
 	if ( document.getElementById("chkbox_vis_DMRs").checked ) {
 		data.push( data_dnamethyl_DMR_RRBS )
 		data.push( data_dnamethyl_DMR_WGBS )
