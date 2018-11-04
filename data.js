@@ -463,7 +463,7 @@ var data_chr_exp18 =
 var data_rep_hist_npeak = 
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
-"type":"hammock",
+"type":"bed",
 "uc":true,
 "color":"Red","rgb":"255,0,0","mode":6,
 "info":"Narrow peaks",
@@ -594,7 +594,7 @@ var data_rep_hist_npeak =
 var data_rep_hist_bpeak = 
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
-"type":"hammock",
+"type":"bed",
 "uc":true,
 "color":"Red","rgb":"255,0,0","mode":6,
 "info":"Broad peaks",
