@@ -844,8 +844,8 @@ function init_vis()
 	document.getElementById("chkbox_vis_rep_hist_dpeak").checked 	= true; // default
 	document.getElementById("chkbox_vis_rep_hist_dpeak").disabled 	= false; //removeAttribute( "disabled", "false" );
 
-		document.getElementById("chkbox_vis_rep_hist_npeak").checked 	= false;
-		document.getElementById("chkbox_vis_rep_hist_npeak").disabled 	= true; 
+		//document.getElementById("chkbox_vis_rep_hist_npeak").checked 	= false;
+		//document.getElementById("chkbox_vis_rep_hist_npeak").disabled 	= true; 
 
 		//document.getElementById("chkbox_vis_rep_hist_bpeak").checked 	= false;
 		//document.getElementById("chkbox_vis_rep_hist_bpeak").disabled 	= true; 
