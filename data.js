@@ -621,3 +621,34 @@ var data_dnamethyl_WGBS_FM=
 ]
 };
 
+var data_rna_bigwig =
+{
+"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3444nnn/",
+"type":"bigwig",
+"info":"Normalized coverage for stranded libraries",
+"color":"Maroon","rgb":"128,0,0",
+"data":
+[
+{"eid":"AK066","assay":"RNAseq","info":"","url_tail":"GSM3444565/suppl/GSM3444565_AK066_RNAseq_coverage.bigWig"},
+{"eid":"AK076","assay":"RNAseq","info":"","url_tail":"GSM3444570/suppl/GSM3444570_AK076_RNAseq_coverage.bigWig"},
+{"eid":"AK124","assay":"RNAseq","info":"","url_tail":"GSM3444584/suppl/GSM3444584_AK124_RNAseq_coverage.bigWig"},
+{"eid":"AK199","assay":"RNAseq","info":"","url_tail":"GSM3444602/suppl/GSM3444602_AK199_RNAseq_coverage.bigWig"},
+{"eid":"AK213","assay":"RNAseq","info":"","url_tail":"GSM3444604/suppl/GSM3444604_AK213_RNAseq_coverage.bigWig"},
+{"eid":"AK231","assay":"RNAseq","info":"","url_tail":"GSM3444610/suppl/GSM3444610_AK231_RNAseq_coverage.bigWig"},
+{"eid":"AK071","assay":"RNAseq","info":"","url_tail":"GSM3444567/suppl/GSM3444567_AK071_RNAseq_coverage.bigWig"},
+{"eid":"AK091","assay":"RNAseq","info":"","url_tail":"GSM3444576/suppl/GSM3444576_AK091_RNAseq_coverage.bigWig"},
+{"eid":"AK139","assay":"RNAseq","info":"","url_tail":"GSM3444588/suppl/GSM3444588_AK139_RNAseq_coverage.bigWig"},
+{"eid":"AK153","assay":"RNAseq","info":"","url_tail":"GSM3444591/suppl/GSM3444591_AK153_RNAseq_coverage.bigWig"},
+{"eid":"AK142","assay":"RNAseq","info":"","url_tail":"GSM3444589/suppl/GSM3444589_AK142_RNAseq_coverage.bigWig"},
+{"eid":"AK149","assay":"RNAseq","info":"","url_tail":"GSM3444590/suppl/GSM3444590_AK149_RNAseq_coverage.bigWig"},
+{"eid":"AK156","assay":"RNAseq","info":"","url_tail":"GSM3444592/suppl/GSM3444592_AK156_RNAseq_coverage.bigWig"},
+{"eid":"AK173","assay":"RNAseq","info":"","url_tail":"GSM3444596/suppl/GSM3444596_AK173_RNAseq_coverage.bigWig"},
+{"eid":"AK183","assay":"RNAseq","info":"","url_tail":"GSM3444598/suppl/GSM3444598_AK183_RNAseq_coverage.bigWig"},
+{"eid":"AK089","assay":"RNAseq","info":"","url_tail":"GSM3444575/suppl/GSM3444575_AK089_RNAseq_coverage.bigWig"},
+{"eid":"AK100","assay":"RNAseq","info":"","url_tail":"GSM3444579/suppl/GSM3444579_AK100_RNAseq_coverage.bigWig"},
+{"eid":"AK158","assay":"RNAseq","info":"","url_tail":"GSM3444593/suppl/GSM3444593_AK158_RNAseq_coverage.bigWig"},
+{"eid":"AK178","assay":"RNAseq","info":"","url_tail":"GSM3444597/suppl/GSM3444597_AK178_RNAseq_coverage.bigWig"},
+{"eid":"AK216","assay":"RNAseq","info":"","url_tail":"GSM3444605/suppl/GSM3444605_AK216_RNAseq_coverage.bigWig"},
+]
+};
+

@@ -108,17 +108,11 @@
 	    </div>
           <a name="RNAseq"></a>
           <h1>RNA-seq</h1>
-            <h3>RPKM</h3>
+            <h3>Coverage</h3>
 	    <div>
-                <select class="ddl_eid" id="ddl_eid_rep_hist_align" onchange="onchange_ddl_eid_rep_hist_align(this);">
-                  <option>Choose an genome</option>
-                </select>
-                or
-                <select class="ddl_assay" id="ddl_assay_rep_hist_align" onchange="onchange_ddl_assay_rep_hist_align(this);">
-                  <option>Choose an assay</option>
-                </select>
-                  <br><input type="checkbox" id="chkbox_new_page_align"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><div id=embed_rep_hist_align style="margin:20px;border:solid 2px green;display:none;" ></div>
+                <button id="btn_rna_bigwig" onclick="onclick_btn_rna_bigwig(this);">Visualize</button>
+                  <br><input type="checkbox" id="chkbox_new_page_rna_bigwig"> Open in a new page (deactivate pop-up blockers)
+                <br><div id="embed_rna_bigwig" style="margin:20px;border:solid 2px green;display:none;"></div>
 	    </div>
               <script>
                 init_rep_hist();
