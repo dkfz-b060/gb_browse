@@ -67,6 +67,15 @@ var data_epg=[
 {"eid":"occipital","group":"normal","groupid":5,"consolidated":"1","order":66,"color":"#999999","mnemonic":"normal","name":"","info":""},
 {"eid":"parietal","group":"normal","groupid":5,"consolidated":"1","order":67,"color":"#999999","mnemonic":"normal","name":"","info":""},
 {"eid":"temporal","group":"normal","groupid":5,"consolidated":"1","order":68,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E017","group":"normal","groupid":5,"consolidated":"1","order":69,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E068","group":"normal","groupid":5,"consolidated":"1","order":70,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E069","group":"normal","groupid":5,"consolidated":"1","order":71,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E071","group":"normal","groupid":5,"consolidated":"1","order":72,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E072","group":"normal","groupid":5,"consolidated":"1","order":73,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E073","group":"normal","groupid":5,"consolidated":"1","order":74,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E074","group":"normal","groupid":5,"consolidated":"1","order":75,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E125","group":"normal","groupid":5,"consolidated":"1","order":76,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"E067","group":"normal","groupid":5,"consolidated":"1","order":77,"color":"#999999","mnemonic":"normal","name":"","info":""},
 ];
 
 var data_rep_hist_bw = 
@@ -337,7 +346,7 @@ var data_wubrowser_json_base =
    },
    {
       "type":"coordinate_override",
-      "coord":"chr9,36329955,chr9,37537411",
+      "coord":"chr22,38334894,chr22,38411219",
    },
 
 ];
@@ -369,6 +378,15 @@ var data_chr_exp18 =
 {"eid":"AK158","assay":"","info":"","url_tail":"AK158_stateno.bed.gz"},
 {"eid":"AK178","assay":"","info":"","url_tail":"AK178_stateno.bed.gz"},
 {"eid":"AK216","assay":"","info":"","url_tail":"AK216_stateno.bed.gz"},
+{"eid":"E017","assay":"","info":"","url_tail":"E017_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E068","assay":"","info":"","url_tail":"E068_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E069","assay":"","info":"","url_tail":"E069_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E071","assay":"","info":"","url_tail":"E071_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E072","assay":"","info":"","url_tail":"E072_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E073","assay":"","info":"","url_tail":"E073_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E074","assay":"","info":"","url_tail":"E074_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E125","assay":"","info":"","url_tail":"E125_18_core_K27ac_stateno.bed.gz"},
+{"eid":"E067","assay":"","info":"","url_tail":"E067_18_core_K27ac_stateno.bed.gz"},
 ]
 };
 
