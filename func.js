@@ -829,7 +829,7 @@ function onchange_ddl_eid_rep_hist_gpeak(dropdown)
 function onclick_btn_dnamethyl_WGBS_FM( btn )
 {
 	var embed_id = document.getElementById("chkbox_new_page_dnamethyl_WGBS_FM").checked ? null : "embed_dnamethyl_WGBS_FM"; // embed or null
-	visualize_data( [data_dnamethyl_WGBS_FM], [{"assay":"DNAMethylSBS"}], embed_id );
+	visualize_data( [data_dnamethyl_WGBS_FM], [{"assay":assay_DNAMethyl}], embed_id );
 	return true;
 }
 
