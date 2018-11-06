@@ -63,6 +63,10 @@ var data_epg=[
 {"eid":"MES","group":"MES","groupid":2,"consolidated":"1","order":62,"color":"#377EB8","mnemonic":"MES","name":"","info":""},
 {"eid":"RTK_I","group":"RTK_I","groupid":3,"consolidated":"1","order":63,"color":"#4DAF4A","mnemonic":"RTK_I","name":"","info":""},
 {"eid":"RTK_II","group":"RTK_II","groupid":4,"consolidated":"1","order":64,"color":"#984EA3","mnemonic":"RTK_II","name":"","info":""},
+{"eid":"frontal","group":"normal","groupid":5,"consolidated":"1","order":65,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"occipital","group":"normal","groupid":5,"consolidated":"1","order":66,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"parietal","group":"normal","groupid":5,"consolidated":"1","order":67,"color":"#999999","mnemonic":"normal","name":"","info":""},
+{"eid":"temporal","group":"normal","groupid":5,"consolidated":"1","order":68,"color":"#999999","mnemonic":"normal","name":"","info":""},
 ];
 
 var data_rep_hist_bw = 
@@ -698,6 +702,10 @@ var data_dnamethyl_WGBS_FM=
 {"eid":"AK227","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444673/suppl/GSM3444673_AK227_methylation_values.bigWig"},
 {"eid":"AK231","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444674/suppl/GSM3444674_AK231_methylation_values.bigWig"},
 {"eid":"AK236","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444675/suppl/GSM3444675_AK236_methylation_values.bigWig"},
+{"eid":"frontal","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444676/suppl/GSM3444676_frontal_methylation_values.bigWig"},
+{"eid":"occipital","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444677/suppl/GSM3444677_occipital_methylation_values.bigWig"},
+{"eid":"parietal","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444678/suppl/GSM3444678_parietal_methylation_values.bigWig"},
+{"eid":"temporal","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444679/suppl/GSM3444679_temporal_methylation_values.bigWig"},
 ]
 };
 
@@ -770,6 +778,9 @@ var data_rna_bigwig =
 {"eid":"AK231","assay":"RNAseq","info":"","url_tail":"GSM3444610/suppl/GSM3444610_AK231_RNAseq_coverage.bigWig"},
 {"eid":"AK236","assay":"RNAseq","info":"","url_tail":"GSM3444611/suppl/GSM3444611_AK236_RNAseq_coverage.bigWig"},
 {"eid":"frontal","assay":"RNAseq","info":"","url_tail":"GSM3444612/suppl/GSM3444612_frontal_RNAseq_coverage.bigWig"},
+{"eid":"occipital","assay":"RNAseq","info":"","url_tail":"GSM3444613/suppl/GSM3444613_occipital_RNAseq_coverage.bigWig"},
+{"eid":"parietal","assay":"RNAseq","info":"","url_tail":"GSM3444614/suppl/GSM3444614_parietal_RNAseq_coverage.bigWig"},
+{"eid":"temporal","assay":"RNAseq","info":"","url_tail":"GSM3444615/suppl/GSM3444615_temporal_RNAseq_coverage.bigWig"},
 ]
 };
 
