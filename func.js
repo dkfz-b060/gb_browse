@@ -636,7 +636,7 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 			if ( json[i].type && json[i].type == "coordinate_override" ) {
 				//json[i].coord = "chr9,36329955,chr9,37537411" // original
 				//json[i].coord = "chr9,36782751,chr9,37084615" // narrow
-				json[i].coord = "chr9,36782751,chr9,36884615" // narrower
+				json[i].coord = "chr22,38334894,chr22,38411219" // narrower
 				break;
 			}
 		}
