@@ -797,11 +797,6 @@ function onchange_ddl_eid_rep_hist_bw(dropdown)
 	return onchange_dropdown_by_eid(dropdown, [data_rep_hist_bw], "ddl_assay_rep_hist_bw", "chkbox_new_page_bw", "embed_rep_hist_bw" );
 }
 
-function onchange_ddl_eid_rep_hist_bw2(dropdown)
-{
-	return onchange_dropdown_by_eid(dropdown, [data_rep_hist_bw2], "ddl_assay_rep_hist_bw2", "chkbox_new_page_bw", "embed_rep_hist_bw" );
-}
-
 function onchange_ddl_assay_rep_hist_npeak(dropdown)
 {
 	return onchange_dropdown_by_assay(dropdown, [data_rep_hist_npeak], "ddl_eid_rep_hist_npeak", "chkbox_new_page_npeak", "embed_rep_hist_npeak" );
