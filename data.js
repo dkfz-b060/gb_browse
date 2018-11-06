@@ -588,3 +588,36 @@ var data_rep_hist_bpeak =
 {"eid":"RTK_II","assay":"H3K9me3","info":"AK216","url_tail":"AK216_H3K9me3_W200-G600-FDR0.01-island.bed.gz"},
 ]
 };
+
+var data_dnamethyl_WGBS_FM=
+{
+"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3444nnn/",
+"type":"bigwig",
+"info":"DNAMethyl. WGBS Fractional Methyl.",
+"thtype":1,"thmin":0,"thmax":1,
+"color":"Maroon","rgb":"128,0,0",
+"data":
+[
+{"eid":"AK066","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444629/suppl/GSM3444629_AK066_methylation_values.bigWig"},
+{"eid":"AK076","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444634/suppl/GSM3444634_AK076_methylation_values.bigWig"},
+{"eid":"AK124","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444648/suppl/GSM3444648_AK124_methylation_values.bigWig"},
+{"eid":"AK199","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444666/suppl/GSM3444666_AK199_methylation_values.bigWig"},
+{"eid":"AK213","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444668/suppl/GSM3444668_AK213_methylation_values.bigWig"},
+{"eid":"AK231","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444674/suppl/GSM3444674_AK231_methylation_values.bigWig"},
+{"eid":"AK071","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444631/suppl/GSM3444631_AK071_methylation_values.bigWig"},
+{"eid":"AK091","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444640/suppl/GSM3444640_AK091_methylation_values.bigWig"},
+{"eid":"AK139","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444652/suppl/GSM3444652_AK139_methylation_values.bigWig"},
+{"eid":"AK153","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444655/suppl/GSM3444655_AK153_methylation_values.bigWig"},
+{"eid":"AK142","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444653/suppl/GSM3444653_AK142_methylation_values.bigWig"},
+{"eid":"AK149","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444654/suppl/GSM3444654_AK149_methylation_values.bigWig"},
+{"eid":"AK156","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444656/suppl/GSM3444656_AK156_methylation_values.bigWig"},
+{"eid":"AK173","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444660/suppl/GSM3444660_AK173_methylation_values.bigWig"},
+{"eid":"AK183","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444662/suppl/GSM3444662_AK183_methylation_values.bigWig"},
+{"eid":"AK089","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444639/suppl/GSM3444639_AK089_methylation_values.bigWig"},
+{"eid":"AK100","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444643/suppl/GSM3444643_AK100_methylation_values.bigWig"},
+{"eid":"AK158","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444657/suppl/GSM3444657_AK158_methylation_values.bigWig"},
+{"eid":"AK178","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444661/suppl/GSM3444661_AK178_methylation_values.bigWig"},
+{"eid":"AK216","assay":"DNAMethylSBS","info":"Frac. Methyl.","url_tail":"GSM3444669/suppl/GSM3444669_AK216_methylation_values.bigWig"},
+]
+};
+

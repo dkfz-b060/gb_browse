@@ -62,10 +62,6 @@
                 <select class="ddl_assay" id="ddl_assay_rep_hist_bw" onchange="onchange_ddl_assay_rep_hist_bw(this);">
                   <option>Choose an assay</option>
                 </select>
-                or
-                <select class="ddl_assay" id="ddl_eid_rep_hist_bw2" onchange="onchange_ddl_eid_rep_hist_bw2(this);">
-                  <option>Choose a subtype</option>
-                </select>
                   <br><input type="checkbox" id="chkbox_new_page_bw"> Open in a new page (deactivate pop-up blockers)</input>
                 <br><div id=embed_rep_hist_bw style="margin:20px;border:solid 2px green;display:none;" ></div>
         	</div>
@@ -99,34 +95,16 @@
             <h3>Roadmap 18 states model</h3>
 	    <div>
                 <button id="btn_chr_exp18" onclick="onclick_btn_chr_exp18(this);"> Visualize</button>
-                  <br><input id="chkbox_new_page_chr_exp18" type="checkbox">Open in a new page (deactivate pop-up blockers)</input>
+                  <br><input id="chkbox_new_page_chr_exp18" type="checkbox">Open in a new page (deactivate pop-up blockers)
                 <br><div id="embed_chr_exp18" style="margin:20px;border:solid 2px green;display:none;"></div>
 	    </div>
           <a name="DNAmethylation"></a>
           <h1>DNA methylation</h1>
             <h3>Whole genome bisulfite sequencing</h3>
 	    <div>
-                <select class="ddl_eid" id="ddl_eid_rep_hist_align" onchange="onchange_ddl_eid_rep_hist_align(this);">
-                  <option>Choose an epigenome</option>
-                </select>
-                or
-                <select class="ddl_assay" id="ddl_assay_rep_hist_align" onchange="onchange_ddl_assay_rep_hist_align(this);">
-                  <option>Choose an assay</option>
-                </select>
-                  <br><input type="checkbox" id="chkbox_new_page_align"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><div id=embed_rep_hist_align style="margin:20px;border:solid 2px green;display:none;" ></div>
-	    </div>
-            <h3>450K methylation array</h3>
-	    <div>
-                <select class="ddl_eid" id="ddl_eid_rep_hist_align" onchange="onchange_ddl_eid_rep_hist_align(this);">
-                  <option>Choose an epigenome</option>
-                </select>
-                or
-                <select class="ddl_assay" id="ddl_assay_rep_hist_align" onchange="onchange_ddl_assay_rep_hist_align(this);">
-                  <option>Choose an assay</option>
-                </select>
-                  <br><input type="checkbox" id="chkbox_new_page_align"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><div id=embed_rep_hist_align style="margin:20px;border:solid 2px green;display:none;" ></div>
+                   <button id="btn_dnamethyl_WGBS_FM" onclick="onclick_btn_dnamethyl_WGBS_FM(this);">Visualize</button>
+                      <br><input type="checkbox" id="chkbox_new_page_dnamethyl_WGBS_FM"> Open in a new page (deactivate pop-up blockers)
+                   <br><div id="embed_dnamethyl_WGBS_FM" style="margin:20px;border:solid 2px green;display:none;"></div>
 	    </div>
           <a name="RNAseq"></a>
           <h1>RNA-seq</h1>

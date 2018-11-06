@@ -405,7 +405,7 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 						has_align_data = true;
 					else if ( data_elem.url_tail.search("FractionalMethylation.bed.gz") >= 0 )
 						has_align_data = true;
-					else if ( data_elem.url_tail.search("Peak") >= 0 ) // imputed peak calls
+					else if ( data_elem.url_tail.search("imputedPeak") >= 0 ) // imputed peak calls
 						obj.mode = 6;
 					else
 						obj.mode = 1; // full mode for other beds
@@ -780,7 +780,6 @@ function init_rep_hist()
 	// consolidated epg
 	populate_dropdown_by_eid(  "ddl_eid_rep_hist_bw", [data_rep_hist_bw]);
 	populate_dropdown_by_assay("ddl_assay_rep_hist_bw",[data_rep_hist_bw]);
-	populate_dropdown_by_eid(  "ddl_eid_rep_hist_bw2", [data_rep_hist_bw2]);
 	populate_dropdown_by_eid(  "ddl_eid_rep_hist_npeak"	, [data_rep_hist_npeak]);
 	populate_dropdown_by_assay("ddl_assay_rep_hist_npeak"	, [data_rep_hist_npeak]);
 	populate_dropdown_by_eid(  "ddl_eid_rep_hist_bpeak"	, [data_rep_hist_bpeak]);
@@ -827,246 +826,11 @@ function onchange_ddl_eid_rep_hist_gpeak(dropdown)
 	return onchange_dropdown_by_eid(dropdown, [data_rep_hist_gpeak], "ddl_assay_rep_hist_gpeak", "chkbox_new_page_gpeak", "embed_rep_hist_gpeak" );
 }
 
-/////////////////////////////// index.html (main page, grid visualization)
-
-function init_vis()
+function onclick_btn_dnamethyl_WGBS_FM( btn )
 {
-	// checkboxes
-	document.getElementById("chkbox_vis_rep_hist_pval").checked 	= true;
-	document.getElementById("chkbox_vis_rep_hist_fc").checked 	= false;
-	document.getElementById("chkbox_vis_imp_sig").checked 		= false;
-
-	document.getElementById("chkbox_vis_rep_hist_dpeak").checked 	= true; // default
-	document.getElementById("chkbox_vis_rep_hist_dpeak").disabled 	= false; //removeAttribute( "disabled", "false" );
-
-		//document.getElementById("chkbox_vis_rep_hist_npeak").checked 	= false;
-		//document.getElementById("chkbox_vis_rep_hist_npeak").disabled 	= true; 
-
-		//document.getElementById("chkbox_vis_rep_hist_bpeak").checked 	= false;
-		//document.getElementById("chkbox_vis_rep_hist_bpeak").disabled 	= true; 
-
-		document.getElementById("chkbox_vis_rep_hist_gpeak").checked 	= true;
-		document.getElementById("chkbox_vis_rep_hist_gpeak").disabled 	= true; 
-
-	document.getElementById("chkbox_vis_rep_hist_align").checked 	= false;
-	document.getElementById("chkbox_vis_chr_state_15_catMat").checked = false;
-/*
-	document.getElementById("chkbox_vis_chr_state_18_catMat").checked = false;
-	document.getElementById("chkbox_vis_chr_state_25_catMat").checked = false;
-*/
-	document.getElementById("chkbox_vis_DMRs").checked = false;
-	document.getElementById("chkbox_vis_RRBS").checked = false;
-	document.getElementById("chkbox_vis_WGBS").checked = false;
-	document.getElementById("chkbox_vis_mCRF").checked = false;
-
-	// track height
-	document.getElementById("text_vis_rep_hist_pval").value = height_row_bigwig_default;
-	document.getElementById("text_vis_rep_hist_fc").value 	= height_row_bigwig_default;
-	document.getElementById("text_vis_imp_sig").value 	= height_row_bigwig_default;
-}
-
-function visualize_grid( filter ) //filter = array of [{"eid":eid, "assay":assay }]
-{
-	// check if track height input is valid
-	var height_vis_rep_hist_pval = parseInt( document.getElementById("text_vis_rep_hist_pval").value );
-	var height_vis_rep_hist_fc   = parseInt( document.getElementById("text_vis_rep_hist_fc").value );
-	var height_vis_imp_sig 	     = parseInt( document.getElementById("text_vis_imp_sig").value );
-
-	if ( isNaN( height_vis_rep_hist_pval ) ) {
-		alert("Invalid track height for uniform signal tracks (p-val)");
-		return;
-	}
-	if ( isNaN( height_vis_rep_hist_fc ) ) {
-		alert("Invalid track height for uniform signal tracks (fold enrichment)");
-		return;
-	}
-	if ( isNaN( height_vis_imp_sig ) ) {
-		alert("Invalid track height for imputed signal tracks");
-		return;
-	}
-
-	if ( 	height_vis_rep_hist_pval < 10 || height_vis_rep_hist_pval > 40 ||
-		height_vis_rep_hist_fc < 10 || height_vis_rep_hist_fc > 40 ||
-		height_vis_imp_sig < 10 || height_vis_imp_sig > 40 ) {
-		alert("Input track height between 10 and 40");
-		return;
-	}
-
-	if ( document.getElementById("chkbox_vis_rep_hist_dpeak").checked ) {
-		filter[ "peak" ] = true;
-	}
-
-	// set track height
-	data_rep_hist_pval[ "height" ] 	= height_vis_rep_hist_pval;
-	data_rep_hist_fc[ "height" ] 	= height_vis_rep_hist_fc;
-	data_imp_sig[ "height" ] 	= height_vis_imp_sig;
-
-	var data = concat_data();
-
-	var embed_id = document.getElementById("chkbox_vis_new_page").checked ? null : "embed_vis"; // embed or null
-
-	visualize_data( data, filter, embed_id );
-}
-
-function concat_data()	// prepare to gather data to visualize
-{
-	var data = new Array();
-
-	data.push( data_imp_chr_12m );
-	data.push( data_chr_prim15 );
-	data.push( data_chr_exp18 );
-/*	
-	if ( document.getElementById("chkbox_vis_chr_state_25_catMat").checked ) {
-		data.push( data_imp_chr_12m_catMat );
-	}
-*/
-	if ( document.getElementById("chkbox_vis_chr_state_15_catMat").checked ) {
-		data.push( data_chr_prim15_catMat );
-	}
-/*
-	if ( document.getElementById("chkbox_vis_chr_state_18_catMat").checked ) {
-		data.push( data_chr_exp18_catMat );
-	}
-*/
-	if ( document.getElementById("chkbox_vis_chr_state_15_qcat").checked ) {
-		data.push( data_chr_prim15_qcat );
-	}
-
-	if ( document.getElementById("chkbox_vis_imp_sig").checked ) {
-		data.push( data_imp_sig );
-	}
-	if ( document.getElementById("chkbox_vis_rep_hist_align").checked ) {
-		data.push( data_rep_hist_align );
-		data.push( data_rep_hist_align_uc );
-	}
-	if ( document.getElementById("chkbox_vis_rep_hist_pval").checked ) {
-		data.push( data_rep_hist_pval );
-		data.push( data_rep_hist_pval_uc );
-		data.push( data_rna_bigwig );
-	}
-	if ( document.getElementById("chkbox_vis_rep_hist_fc").checked ) {
-		data.push( data_rep_hist_fc );
-		data.push( data_rep_hist_fc_uc );
-	}
-/*
-	// if default peak is selected concat all peak data
-	if ( document.getElementById("chkbox_vis_rep_hist_dpeak").checked ) {
-		data.push( data_rep_hist_npeak );
-		data.push( data_rep_hist_npeak_uc );
-		//data.push( data_rep_hist_bpeak );
-		data.push( data_rep_hist_gpeak );
-		data.push( data_rep_hist_gpeak_uc );
-	}
-	else {
-		if ( document.getElementById("chkbox_vis_rep_hist_npeak").checked ) {
-			data.push( data_rep_hist_npeak );
-			data.push( data_rep_hist_npeak_uc );
-		}
-
-		if ( document.getElementById("chkbox_vis_rep_hist_bpeak").checked ) {
-			data.push( data_rep_hist_bpeak );
-			data.push( data_rep_hist_bpeak_uc );
-		}
-
-		if ( document.getElementById("chkbox_vis_rep_hist_gpeak").checked ) {
-			data.push( data_rep_hist_gpeak );
-			data.push( data_rep_hist_gpeak_uc );
-		}
-	}
-*/
-	if ( document.getElementById("chkbox_vis_DMRs").checked ) {
-		data.push( data_dnamethyl_DMR_RRBS )
-		data.push( data_dnamethyl_DMR_WGBS )
-	}
-
-	if ( document.getElementById("chkbox_vis_RRBS").checked ) {
-		data.push( data_dnamethyl_RRBS_FM ) 
-		data.push( data_dnamethyl_RRBS_RC ) 
-	}
-
-	if ( document.getElementById("chkbox_vis_WGBS").checked ) {
-		data.push( data_dnamethyl_WGBS_FM ) 
-		data.push( data_dnamethyl_WGBS_RC ) 
-	}
-
-	if ( document.getElementById("chkbox_vis_mCRF").checked ) {
-		data.push( data_dnamethyl_mCRF_FM ) 
-	}
-
-	return data;
-}
-
-function get_data_avail_map()
-{
-	var data = concat_data();
-
-	var epg_json = new Object; // temp array for fast search
-
-	var avail = new Object; // availibility matrix (epg by assay)
-
-	var dpeak_checked = document.getElementById("chkbox_vis_rep_hist_dpeak").checked;
-
-	// temp array for fast epg,assay info search
-	var assay_json = new Object;
-	for(var i = 0; i < data_assay.length; i++ ) {
-		var elem1 = data_assay[i];
-		assay_json[ elem1.name ] = elem1;
-	}
-
-	for(var i = 0; i < data_epg.length; i++ ) {
-		var elem1 = data_epg[i];
-		epg_json[ elem1. eid ] = elem1;
-
-		avail[ elem1.eid ] = new Object;
-		for(var j = 0; j < data_assay.length; j++ ) {
-			var elem2 = data_assay[j];
-			avail[ elem1.eid ][ elem2.name ] = { "consolidated" : 0, "unconsolidated" : 0 };
-		}
-	}
-	
-	// iterate through all data sets
-	for(var k = 0; k < data.length; k++ ) {
-		var elem1 = data[k];
-
-		for(var i = 0; i < elem1.data.length; i++ ) {
-			elem2 = elem1.data[i];
-
-			if ( elem2.eid && elem2.eid != "" && elem2.assay && elem2.assay != "" ) {
-
-				var cnt = 0;
-				// if default peak should be used, count number of data carefully according to assay type
-				if ( dpeak_checked ) { 
-					var peak_type = assay_json[ elem2.assay ].peak;
-
-					if ( elem1.info == "Narrow peaks" ){					
-						if ( peak_type == "N" || peak_type == "?" ) 
-							cnt++;
-					}
-					else if ( elem1.info == "Broad peaks" ) {
-						if ( peak_type == "B" ) 
-							cnt++;
-					}
-					else if ( elem1.info == "Gapped peaks" ) {
-						if ( peak_type == "G" ) 
-							cnt++;
-					}
-					else {
-						cnt++
-					}
-				}
-				else { 
-					cnt++;
-				}
-
-				if ( elem1.uc ) // if data is unconsolidated
-					avail[ elem2.eid ][ elem2.assay ].unconsolidated += cnt;
-				else
-					avail[ elem2.eid ][ elem2.assay ].consolidated += cnt;
-			}
-		}
-	}
-
-	return avail;
+	var embed_id = document.getElementById("chkbox_new_page_dnamethyl_WGBS_FM").checked ? null : "embed_dnamethyl_WGBS_FM"; // embed or null
+	visualize_data( [data_dnamethyl_WGBS_FM], [{"assay":assay_DNAMethyl}], embed_id );
+	return true;
 }
 
 function onclick_btn_chr_exp18( btn )
