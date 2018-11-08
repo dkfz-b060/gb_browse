@@ -345,7 +345,7 @@ var data_wubrowser_json_base =
    },
    {
       "type":"coordinate_override",
-      "coord":"chr22,38334894,chr22,38411219",
+      "coord":"chr9,36329955,chr9,37537411",
    },
 
 ];
