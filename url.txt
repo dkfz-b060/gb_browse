@@ -1,0 +1,363 @@
+> Accession      Title                    Release date   Status    Supplemen-
+>                                                                 tary files
+> --------------------------------------------------------------------------
+> GSE121723      Integrative epigenom...  Nov 05, 2018   approved  None      
+> --------------------------------------------------------------------------
+> GSE121716      Integrative epigenom...  Nov 05, 2018   approved  BED BED BED
+> BED TAR 
+> GSM3444407     LN229_shControl_H3       Nov 05, 2018   approved  BIGWIG    
+> GSM3444408     LN229_shControl_H3K27ac  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444409     LN229_shControl_H3K2...  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444410     LN229_shControl_H3K3...  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444411     LN229_shControl_H3K4me1  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444412     LN229_shControl_H3K4me3  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444413     LN229_shControl_H3K9me3  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444414     LN229_shSOX10_H3         Nov 05, 2018   approved  BIGWIG    
+> GSM3444415     LN229_shSOX10_H3K27ac    Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444416     LN229_shSOX10_H3K27me3   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444417     LN229_shSOX10_H3K36me3   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444418     LN229_shSOX10_H3K4me1    Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444419     LN229_shSOX10_H3K4me3    Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444420     LN229_shSOX10_H3K9me3    Nov 05, 2018   approved  BED BIGWIG BED 
+> --------------------------------------------------------------------------
+> GSE121717      Integrative epigenom...  Nov 05, 2018   approved  TXT TAR   
+> GSM3444421     LN229_shControl_RNAseq   Nov 05, 2018   approved  BIGWIG    
+> GSM3444422     LN229_shSOX10_RNAseq     Nov 05, 2018   approved  BIGWIG    
+> --------------------------------------------------------------------------
+> GSE121718      Integrative epigenom...  Nov 05, 2018   approved  TAR       
+> GSM3444423     LN229_CRISPRi_mock       Nov 05, 2018   approved  CEL       
+> GSM3444424     LN229_CRISPRi_NT         Nov 05, 2018   approved  CEL       
+> GSM3444425     LN229_CRISPRi_shSOX10_1  Nov 05, 2018   approved  CEL       
+> GSM3444426     LN229_CRISPRi_shSOX10_2  Nov 05, 2018   approved  CEL       
+> GSM3444427     LN229_CRISPRi_shSOX10_3  Nov 05, 2018   approved  CEL       
+> GSM3444428     ZH487_mock               Nov 05, 2018   approved  CEL       
+> GSM3444429     ZH487_NT                 Nov 05, 2018   approved  CEL       
+> GSM3444430     ZH487_shSOX10_1          Nov 05, 2018   approved  CEL       
+> GSM3444431     ZH487_shSOX10_2          Nov 05, 2018   approved  CEL       
+> GSM3444432     ZH487_shSOX10_3          Nov 05, 2018   approved  CEL       
+> --------------------------------------------------------------------------
+> GSE121719      Integrative epigenom...  Nov 05, 2018   approved  BED BED BED
+> BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED
+> BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED BED
+> BED BED CSV BED BED BED BED BED CSV BED BED BED BED BED BED BED BED BED BED
+> TAR BED BED BED BED BED BED BED BED 
+> GSM3444433     AK066_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444434     AK066_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444435     AK066_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444436     AK066_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444437     AK066_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444438     AK071_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444439     AK071_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444440     AK071_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444441     AK071_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444442     AK071_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444443     AK071_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444444     AK076_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444445     AK076_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444446     AK076_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444447     AK076_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444448     AK076_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444449     AK076_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444450     AK089_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444451     AK089_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444452     AK089_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444453     AK089_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444454     AK089_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444455     AK089_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444456     AK091_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444457     AK091_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444458     AK091_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444459     AK091_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444460     AK091_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444461     AK091_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444462     AK100_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444463     AK100_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444464     AK100_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444465     AK100_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444466     AK100_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444467     AK100_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444468     AK124_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444469     AK124_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444470     AK124_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444471     AK124_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444472     AK124_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444473     AK124_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444474     AK139_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444475     AK139_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444476     AK139_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444477     AK139_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444478     AK139_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444479     AK139_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444480     AK142_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444481     AK142_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444482     AK142_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444483     AK142_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444484     AK142_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444485     AK142_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444486     AK149_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444487     AK149_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444488     AK149_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444489     AK149_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444490     AK149_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444491     AK149_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444492     AK153_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444493     AK153_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444494     AK153_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444495     AK153_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444496     AK153_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444497     AK153_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444498     AK156_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444499     AK156_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444500     AK156_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444501     AK156_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444502     AK156_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444503     AK156_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444504     AK158_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444505     AK158_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444506     AK158_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444507     AK158_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444508     AK158_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444509     AK158_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444510     AK173_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444511     AK173_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444512     AK173_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444513     AK173_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444514     AK173_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444515     AK173_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444516     AK178_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444517     AK178_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444518     AK178_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444519     AK178_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444520     AK178_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444521     AK178_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444522     AK183_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444523     AK183_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444524     AK183_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444525     AK183_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444526     AK183_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444527     AK183_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444528     AK199_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444529     AK199_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444530     AK199_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444531     AK199_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444532     AK199_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444533     AK199_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444534     AK213_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444535     AK213_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444536     AK213_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444537     AK213_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444538     AK213_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444539     AK213_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444540     AK216_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444541     AK216_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444542     AK216_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444543     AK216_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444544     AK216_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444545     AK216_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444546     AK231_H3K27ac_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444547     AK231_H3K27me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444548     AK231_H3K36me3_ChIP-seq  Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444549     AK231_H3K4me1_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444550     AK231_H3K4me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> GSM3444551     AK231_H3K9me3_ChIP-seq   Nov 05, 2018   approved  BED BIGWIG BED 
+> --------------------------------------------------------------------------
+> GSE121720      Integrative epigenom...  Nov 05, 2018   approved  BIGWIG BIGWIG
+> BIGWIG TAR TXT TXT BIGWIG BIGWIG CSV CSV 
+> GSM3444552     AK002 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444553     AK003 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444554     AK005 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444555     AK006 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444556     AK015 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444557     AK030 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444558     AK035 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444559     AK041 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444560     AK043 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444561     AK049 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444562     AK051 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444563     AK053 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444564     AK055 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444565     AK066 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444566     AK068 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444567     AK071 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444568     AK072 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444569     AK074 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444570     AK076 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444571     AK079 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444572     AK081 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444573     AK085 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444574     AK088 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444575     AK089 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444576     AK091 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444577     AK098 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444578     AK099 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444579     AK100 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444580     AK102 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444581     AK103 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444582     AK117 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444583     AK123 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444584     AK124 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444585     AK132 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444586     AK133 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444587     AK134 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444588     AK139 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444589     AK142 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444590     AK149 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444591     AK153 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444592     AK156 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444593     AK158 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444594     AK165 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444595     AK167 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444596     AK173 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444597     AK178 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444598     AK183 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444599     AK185 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444600     AK188 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444601     AK195 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444602     AK199 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444603     AK205 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444604     AK213 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444605     AK216 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444606     AK217 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444607     AK218 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444608     AK226 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444609     AK227 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444610     AK231 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444611     AK236 [tumor RNA-seq]    Nov 05, 2018   approved  BIGWIG    
+> GSM3444612     frontal [tumor RNA-seq]  Nov 05, 2018   approved  BIGWIG    
+> GSM3444613     occipital [tumor RNA...  Nov 05, 2018   approved  BIGWIG    
+> GSM3444614     parietal [tumor RNA-...  Nov 05, 2018   approved  BIGWIG    
+> GSM3444615     temporal [tumor RNA-...  Nov 05, 2018   approved  BIGWIG    
+> --------------------------------------------------------------------------
+> GSE121721      Integrative epigenom...  Nov 05, 2018   approved  TXT TXT TXT
+> TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT
+> TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT
+> TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT TXT
+> TXT TXT TXT TXT TXT TXT TXT BED BED BED BED BED BED BED BED BED BED BIGWIG BED
+> BED BED BIGWIG BED BED BED BIGWIG TAR BIGWIG BED BED BED BIGWIG BED BED BED 
+> GSM3444616     AK002 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444617     AK003 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444618     AK005 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444619     AK006 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444620     AK015 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444621     AK030 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444622     AK035 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444623     AK041 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444624     AK043 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444625     AK049 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444626     AK051 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444627     AK053 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444628     AK055 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444629     AK066 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444630     AK068 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444631     AK071 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444632     AK072 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444633     AK074 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444634     AK076 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444635     AK079 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444636     AK081 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444637     AK085 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444638     AK088 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444639     AK089 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444640     AK091 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444641     AK098 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444642     AK099 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444643     AK100 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444644     AK102 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444645     AK103 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444646     AK117 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444647     AK123 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444648     AK124 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444649     AK132 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444650     AK133 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444651     AK134 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444652     AK139 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444653     AK142 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444654     AK149 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444655     AK153 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444656     AK156 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444657     AK158 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444658     AK165 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444659     AK167 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444660     AK173 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444661     AK178 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444662     AK183 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444663     AK185 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444664     AK188 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444665     AK195 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444666     AK199 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444667     AK205 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444668     AK213 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444669     AK216 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444670     AK217 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444671     AK218 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444672     AK226 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444673     AK227 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444674     AK231 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444675     AK236 [tumor WGBS-seq]   Nov 05, 2018   approved  BIGWIG    
+> GSM3444676     frontal [tumor WGBS-...  Nov 05, 2018   approved  BIGWIG    
+> GSM3444677     occipital [tumor WGB...  Nov 05, 2018   approved  BIGWIG    
+> GSM3444678     parietal [tumor WGBS...  Nov 05, 2018   approved  BIGWIG    
+> GSM3444679     temporal [tumor WGBS...  Nov 05, 2018   approved  BIGWIG    
+> --------------------------------------------------------------------------
+> GSE121722      Integrative epigenom...  Nov 05, 2018   approved  TAR       
+> GSM3444680     AK002 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444681     AK003 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444682     AK005 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444683     AK006 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444684     AK015 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444685     AK030 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444686     AK035 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444687     AK041 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444688     AK043 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444689     AK049 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444690     AK051 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444691     AK053 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444692     AK055 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444693     AK066 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444694     AK068 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444695     AK071 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444696     AK072 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444697     AK074 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444698     AK076 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444699     AK079 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444700     AK081 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444701     AK085 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444702     AK088 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444703     AK089 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444704     AK091 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444705     AK098 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444706     AK099 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444707     AK100 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444708     AK102 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444709     AK103 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444710     AK117 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444711     AK123 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444712     AK124 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444713     AK132 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444714     AK133 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444715     AK134 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444716     AK139 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444717     AK142 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444718     AK149 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444719     AK153 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444720     AK156 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444721     AK158 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444722     AK165 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444723     AK167 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444724     AK173 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444725     AK178 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444726     AK183 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444727     AK185 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444728     AK188 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444729     AK195 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444730     AK199 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444731     AK205 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444732     AK213 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444733     AK216 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444734     AK217 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444735     AK218 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444736     AK226 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444737     AK227 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444738     AK231 [tumor methyla...  Nov 05, 2018   approved  None      
+> GSM3444739     AK236 [tumor methyla...  Nov 05, 2018   approved  None      
+> --------------------------------------------------------------------------
