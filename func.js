@@ -666,6 +666,7 @@ function populate_dropdown_by_eid( elem_id, data ) {
 		}
 	}
 	
+	let sels = [];
 	// populate
 	for(var i = 0; i < data_epg.length; i++) {
 		var elem = data_epg[i];
@@ -674,9 +675,17 @@ function populate_dropdown_by_eid( elem_id, data ) {
 			var el = document.createElement("option");
 			el.value = elem.eid;
 			el.textContent = elem.eid.replace(/_/g," ") + " " + elem.name + " (" + data_cnt[ elem.eid ] + " trk)";
-			select_eid.appendChild(el);
+			sels.push(el);
 		}
-	}	
+	}
+	// sort by the number of tracks
+	sels.sort(function(x,y){
+	  var xp = x.text.substr(x.text.length-6, 1)
+	  var yp = y.text.substr(y.text.length-6, 1)
+	  return xp == yp ? 0 : xp < yp ? 1 : -1;
+	});
+	for (const el of sels)
+		select_eid.appendChild(el);
 }
 
 function populate_dropdown_by_assay( elem_id, data ) {
@@ -806,6 +815,7 @@ function init_rep_hist()
 	let big_data = data_rep_hist_bw;
 	big_data.data = big_data.data.concat(data_dnamethyl_WGBS_FM.data);
 	big_data.data = big_data.data.concat(data_rna_bigwig.data);
+	big_data.info = "";
 	// consolidated epg
 	populate_dropdown_by_eid(  "eid", [big_data]);
 	populate_dropdown_by_assay("assay",[big_data]);
