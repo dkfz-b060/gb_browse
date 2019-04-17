@@ -714,6 +714,33 @@ function populate_dropdown_by_assay( elem_id, data ) {
 	}
 }
 
+function on_submit()
+{
+	var embed_id = $('#chkbox_new_page').is(':checked') ? null : "panel1";
+	var filter = [];
+	for (const the_eid of $('#eid').val()) {
+		for (const the_assay of $('#assay').val()) {
+			filter.push({"eid":the_eid, "assay":the_assay})
+		}
+	}
+	var data;
+	if ($('#dataset').val() == "Raw signals")
+		data = [data_rep_hist_bw];
+	else if ($('#dataset').val() == "Narrow peak")
+		data = [data_rep_hist_npeak];
+	else if ($('#dataset').val() == "Broad peak")
+		data = [data_rep_hist_bpeak];
+	else if ($('#dataset').val() == "Chromatin states")
+		data = [data_chr_exp18];
+	else if ($('#dataset').val() == "DNA methylation")
+		data = [data_dnamethyl_WGBS_FM];
+	else if ($('#dataset').val() == "RNA-seq")
+		data = [data_rna_bigwig];
+	visualize_data( data, filter, embed_id, false, 'hg19' );
+
+	return true;
+}
+
 function onchange_dropdown_by_eid(dropdown, data, paired_ddl_id, chkbox_id, embed_id, genome )
 {
 	if ( paired_ddl_id != "" ) {
@@ -778,12 +805,8 @@ function init_rep_hist()
 	// populate dropdown list
 
 	// consolidated epg
-	populate_dropdown_by_eid(  "ddl_eid_rep_hist_bw", [data_rep_hist_bw]);
-	populate_dropdown_by_assay("ddl_assay_rep_hist_bw",[data_rep_hist_bw]);
-	populate_dropdown_by_eid(  "ddl_eid_rep_hist_npeak"	, [data_rep_hist_npeak]);
-	populate_dropdown_by_assay("ddl_assay_rep_hist_npeak"	, [data_rep_hist_npeak]);
-	populate_dropdown_by_eid(  "ddl_eid_rep_hist_bpeak"	, [data_rep_hist_bpeak]);
-	populate_dropdown_by_assay("ddl_assay_rep_hist_bpeak"	, [data_rep_hist_bpeak]);
+	populate_dropdown_by_eid(  "eid", [data_rep_hist_bw]);
+	populate_dropdown_by_assay("assay",[data_rep_hist_bw]);
 }
 
 function onchange_ddl_assay_rep_hist_bw(dropdown)
