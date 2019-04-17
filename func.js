@@ -518,7 +518,7 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 					}
 					else if ( data[k].type == "categorical" && filt_elem.eid == data_elem.eid ) { 
 						// for chromatin state map, check eid only
-
+						obj.name = epg_info;
 						if ( filt_elem.assay == assay_name_chr_prim15  && data[k].chr_state == "15" )
 							obj.name = epg_info;
 
@@ -717,25 +717,26 @@ function populate_dropdown_by_assay( elem_id, data ) {
 function on_submit()
 {
 	var embed_id = $('#chkbox_new_page').is(':checked') ? null : "panel1";
-	var filter = [];
+	let filter = [], data = [];
 	for (const the_eid of $('#eid').val()) {
 		for (const the_assay of $('#assay').val()) {
 			filter.push({"eid":the_eid, "assay":the_assay})
 		}
 	}
-	var data;
-	if ($('#dataset').val() == "Raw signals")
-		data = [data_rep_hist_bw];
-	else if ($('#dataset').val() == "Narrow peak")
-		data = [data_rep_hist_npeak];
-	else if ($('#dataset').val() == "Broad peak")
-		data = [data_rep_hist_bpeak];
-	else if ($('#dataset').val() == "Chromatin states")
-		data = [data_chr_exp18];
-	else if ($('#dataset').val() == "DNA methylation")
-		data = [data_dnamethyl_WGBS_FM];
-	else if ($('#dataset').val() == "RNA-seq")
-		data = [data_rna_bigwig];
+	for (const the_data of $('#dataset').val()) {
+	if (the_data == "Raw signals")
+		data.push(data_rep_hist_bw);
+	else if (the_data == "Narrow peak")
+		data.push(data_hist_npeak);
+	else if (the_data == "Broad peak")
+		data.push(data_hist_bpeak);
+	else if (the_data == "Chromatin states")
+		data.push(data_chr_exp18);
+	else if (the_data == "DNA methylation")
+		data.push(data_dnamethyl_WGBS_FM);
+	else if (the_data == "RNA-seq")
+		data.push(data_rna_bigwig);
+	}
 	visualize_data( data, filter, embed_id, false, 'hg19' );
 
 	return true;
