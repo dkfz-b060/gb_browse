@@ -518,7 +518,7 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 					}
 					else if ( data[k].type == "categorical" && filt_elem.eid == data_elem.eid ) { 
 						// for chromatin state map, check eid only
-
+						obj.name = epg_info;
 						if ( filt_elem.assay == assay_name_chr_prim15  && data[k].chr_state == "15" )
 							obj.name = epg_info;
 
@@ -666,6 +666,7 @@ function populate_dropdown_by_eid( elem_id, data ) {
 		}
 	}
 	
+	let sels = [];
 	// populate
 	for(var i = 0; i < data_epg.length; i++) {
 		var elem = data_epg[i];
@@ -674,9 +675,17 @@ function populate_dropdown_by_eid( elem_id, data ) {
 			var el = document.createElement("option");
 			el.value = elem.eid;
 			el.textContent = elem.eid.replace(/_/g," ") + " " + elem.name + " (" + data_cnt[ elem.eid ] + " trk)";
-			select_eid.appendChild(el);
+			sels.push(el);
 		}
-	}	
+	}
+	// sort by the number of tracks
+	sels.sort(function(x,y){
+	  var xp = x.text.substr(x.text.length-6, 1)
+	  var yp = y.text.substr(y.text.length-6, 1)
+	  return xp == yp ? 0 : xp < yp ? 1 : -1;
+	});
+	for (const el of sels)
+		select_eid.appendChild(el);
 }
 
 function populate_dropdown_by_assay( elem_id, data ) {
@@ -712,6 +721,34 @@ function populate_dropdown_by_assay( elem_id, data ) {
 			select_assay.appendChild(el);
 		}
 	}
+}
+
+function on_submit()
+{
+	var embed_id = $('#chkbox_new_page').is(':checked') ? null : "panel1";
+	let filter = [], data = [];
+	for (const the_eid of $('#eid').val()) {
+		for (const the_assay of $('#assay').val()) {
+			filter.push({"eid":the_eid, "assay":the_assay})
+		}
+	}
+	for (const the_data of $('#dataset').val()) {
+	if (the_data == "Raw signals")
+		data.push(data_rep_hist_bw);
+	else if (the_data == "Narrow peak")
+		data.push(data_hist_npeak);
+	else if (the_data == "Broad peak")
+		data.push(data_hist_bpeak);
+	else if (the_data == "Chromatin states")
+		data.push(data_chr_exp18);
+	else if (the_data == "DNA methylation")
+		data.push(data_dnamethyl_WGBS_FM);
+	else if (the_data == "RNA-seq")
+		data.push(data_rna_bigwig);
+	}
+	visualize_data( data, filter, embed_id, false, 'hg19' );
+
+	return true;
 }
 
 function onchange_dropdown_by_eid(dropdown, data, paired_ddl_id, chkbox_id, embed_id, genome )
@@ -775,15 +812,13 @@ function sleep( ms )
 
 function init_rep_hist()
 {
-	// populate dropdown list
-
+	let big_data = data_rep_hist_bw;
+	big_data.data = big_data.data.concat(data_dnamethyl_WGBS_FM.data);
+	big_data.data = big_data.data.concat(data_rna_bigwig.data);
+	big_data.info = "";
 	// consolidated epg
-	populate_dropdown_by_eid(  "ddl_eid_rep_hist_bw", [data_rep_hist_bw]);
-	populate_dropdown_by_assay("ddl_assay_rep_hist_bw",[data_rep_hist_bw]);
-	populate_dropdown_by_eid(  "ddl_eid_rep_hist_npeak"	, [data_rep_hist_npeak]);
-	populate_dropdown_by_assay("ddl_assay_rep_hist_npeak"	, [data_rep_hist_npeak]);
-	populate_dropdown_by_eid(  "ddl_eid_rep_hist_bpeak"	, [data_rep_hist_bpeak]);
-	populate_dropdown_by_assay("ddl_assay_rep_hist_bpeak"	, [data_rep_hist_bpeak]);
+	populate_dropdown_by_eid(  "eid", [big_data]);
+	populate_dropdown_by_assay("assay",[big_data]);
 }
 
 function onchange_ddl_assay_rep_hist_bw(dropdown)

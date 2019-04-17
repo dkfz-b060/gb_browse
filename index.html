@@ -9,30 +9,34 @@
     <meta name="author" content="">
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://epigenomegateway.wustl.edu/browser/css/style.css" />
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/jscolor.min.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/base.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/session.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/bev.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/gsm.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/session.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/fileload.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/scp.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/geneplot.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/validhub.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/circlet.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/sukn.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/personality.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/dataProvider.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/hicInterface.js"></script>
-    <script type="text/javascript" src="https://epigenomegateway.wustl.edu/browser/js/embed.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/browser/style.css" />
+    <script type="text/javascript" src="./js/browser/jscolor.min.js"></script>
+    <script type="text/javascript" src="./js/browser/base.js"></script>
+    <script type="text/javascript" src="./js/browser/session.js"></script>
+    <script type="text/javascript" src="./js/browser/bev.js"></script>
+    <script type="text/javascript" src="./js/browser/gsm.js"></script>
+    <script type="text/javascript" src="./js/browser/session.js"></script>
+    <script type="text/javascript" src="./js/browser/fileload.js"></script>
+    <script type="text/javascript" src="./js/browser/scp.js"></script>
+    <script type="text/javascript" src="./js/browser/geneplot.js"></script>
+    <script type="text/javascript" src="./js/browser/validhub.js"></script>
+    <script type="text/javascript" src="./js/browser/circlet.js"></script>
+    <script type="text/javascript" src="./js/browser/sukn.js"></script>
+    <script type="text/javascript" src="./js/browser/personality.js"></script>
+    <script type="text/javascript" src="./js/browser/dataProvider.js"></script>
+    <script type="text/javascript" src="./js/browser/hicInterface.js"></script>
+    <script type="text/javascript" src="./js/browser/embed.js"></script>
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-3.3.2.min.css" rel="stylesheet">
     <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="theme.css" rel="stylesheet">
 
     <!--script src="../../assets/js/ie-emulation-modes-warning.js"></script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/bootstrap-3.3.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -52,70 +56,27 @@
     <div class="container-fluid theme-showcase" role="main" id="body">
       <div class="page-header" style="width: 60%; margin: 0 auto">
           <a name="ChipSeq_DNaseSeq"></a>
-          <h1>Histone ChIP-seq</h1>
-            <h3>Raw signals</h3>
+          <h1>Glioblastoma</h1>
+            <h3>Histone ChIP-seq</h3>
 	    <div>
-                <select class="ddl_eid" id="ddl_eid_rep_hist_bw" onchange="onchange_ddl_eid_rep_hist_bw(this);">
-                  <option>Choose an epigenome</option>
-                </select>
-                or
-                <select class="ddl_assay" id="ddl_assay_rep_hist_bw" onchange="onchange_ddl_assay_rep_hist_bw(this);">
-                  <option>Choose an assay</option>
-                </select>
-                  <br><input type="checkbox" id="chkbox_new_page_bw"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><div id=embed_rep_hist_bw style="margin:20px;border:solid 2px green;display:none;" ></div>
+               <section>Sample ID: <select id="eid" multiple="multiple"></select></section>
+               <section>Assay: <select id="assay" multiple="multiple"></select></section>
+               <section>Dataset: <select id="dataset" multiple="multiple">
+		<option>Raw signals</option>
+		<option>Narrow peak</option>
+		<option>Broad peak</option>
+		<option>Chromatin states</option>
+		</select></section>
+                  <br><input type="checkbox" id="chkbox_new_page"> Open in a new page (deactivate pop-up blockers)</input>
+                <br><button onclick="on_submit(this);"> Visualize</button>
+		<div id="panel1" style="margin:20px;border:solid 2px green;display:none;" ></div>
         	</div>
-            <h3>Peak calling</h3>
-  	    <div>
-		<ul>
-              <li>Narrow peak</li>
-		<select class="ddl_eid" id="ddl_eid_rep_hist_npeak" onchange="onchange_ddl_eid_rep_hist_npeak(this);">
-                  <option>Choose an epigenome</option>
-                </select>
-                or
-                <select class="ddl_assay" id="ddl_assay_rep_hist_npeak" onchange="onchange_ddl_assay_rep_hist_npeak(this);">
-                  <option>Choose an assay</option>
-                </select>
-                <br><input type="checkbox" id="chkbox_new_page_npeak"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><div id=embed_rep_hist_npeak style="margin:20px;border:solid 2px green;display:none;" ></div>
-        	<li>Broad peak</li>
-                  <select class="ddl_eid" id="ddl_eid_rep_hist_bpeak" onchange="onchange_ddl_eid_rep_hist_bpeak(this);">
-                    <option>Choose an epigenome</option>
-                  </select>
-                  or
-                  <select class="ddl_assay" id="ddl_assay_rep_hist_bpeak" onchange="onchange_ddl_assay_rep_hist_bpeak(this);">
-                    <option>Choose an assay</option>
-                  </select>
-                  <br><input type="checkbox" id="chkbox_new_page_bpeak"> Open in a new page (deactivate pop-up blockers)</input>
-                  <br><div id=embed_rep_hist_bpeak style="margin:20px;border:solid 2px green;display:none;" ></div>
-                </ul> 
-	    </div>
-          <a name="ChromHMM"></a>
-          <h1>Chromatin states</h1>
-            <h3>Roadmap 18 states model</h3>
-	    <div>
-                <button id="btn_chr_exp18" onclick="onclick_btn_chr_exp18(this);"> Visualize</button>
-                  <br><input id="chkbox_new_page_chr_exp18" type="checkbox">Open in a new page (deactivate pop-up blockers)
-                <br><div id="embed_chr_exp18" style="margin:20px;border:solid 2px green;display:none;"></div>
-	    </div>
-          <a name="DNAmethylation"></a>
-          <h1>DNA methylation</h1>
-            <h3>Whole genome bisulfite sequencing</h3>
-	    <div>
-                   <button id="btn_dnamethyl_WGBS_FM" onclick="onclick_btn_dnamethyl_WGBS_FM(this);">Visualize</button>
-                      <br><input type="checkbox" id="chkbox_new_page_dnamethyl_WGBS_FM"> Open in a new page (deactivate pop-up blockers)
-                   <br><div id="embed_dnamethyl_WGBS_FM" style="margin:20px;border:solid 2px green;display:none;"></div>
-	    </div>
-          <a name="RNAseq"></a>
-          <h1>RNA-seq</h1>
-            <h3>Coverage</h3>
-	    <div>
-                <button id="btn_rna_bigwig" onclick="onclick_btn_rna_bigwig(this);">Visualize</button>
-                  <br><input type="checkbox" id="chkbox_new_page_rna_bigwig"> Open in a new page (deactivate pop-up blockers)
-                <br><div id="embed_rna_bigwig" style="margin:20px;border:solid 2px green;display:none;"></div>
-	    </div>
               <script>
                 init_rep_hist();
+
+$('#eid').multiselect({includeSelectAllOption: true});
+$('#assay').multiselect({includeSelectAllOption: true});
+$('#dataset').multiselect({includeSelectAllOption: true});
               </script>
           </div>
 	<br>
