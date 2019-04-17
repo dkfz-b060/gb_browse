@@ -803,11 +803,12 @@ function sleep( ms )
 
 function init_rep_hist()
 {
-	// populate dropdown list
-
+	let big_data = data_rep_hist_bw;
+	big_data.data = big_data.data.concat(data_dnamethyl_WGBS_FM.data);
+	big_data.data = big_data.data.concat(data_rna_bigwig.data);
 	// consolidated epg
-	populate_dropdown_by_eid(  "eid", [data_rep_hist_bw]);
-	populate_dropdown_by_assay("assay",[data_rep_hist_bw]);
+	populate_dropdown_by_eid(  "eid", [big_data]);
+	populate_dropdown_by_assay("assay",[big_data]);
 }
 
 function onchange_ddl_assay_rep_hist_bw(dropdown)
