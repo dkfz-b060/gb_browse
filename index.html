@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/browser/style.css" />
     <script type="text/javascript" src="./js/browser/jscolor.min.js"></script>
     <script type="text/javascript" src="./js/browser/base.js"></script>
@@ -31,12 +31,13 @@
     <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="./css/bootstrap-multiselect.css" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom-select.css" rel="stylesheet">
     <link href="theme.css" rel="stylesheet">
 
     <!--script src="../../assets/js/ie-emulation-modes-warning.js"></script-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./js/bootstrap-3.3.2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
+    <script src="./js/bootstrap-multiselect.js"></script>
+    <script src="./js/custom-select.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,6 +45,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="./session.js"></script>
     <script src="./data.js"></script>
     <script src="./func.js"></script>
 
@@ -67,16 +69,17 @@
 		<option>Broad peak</option>
 		<option>Chromatin states</option>
 		</select></section>
+		<section>Session: <select id="session" onchange="on_change(this)"></select></section>
                   <br><input type="checkbox" id="chkbox_new_page"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><button onclick="on_submit(this);"> Visualize</button>
+                <br><button onclick="on_submit(this)"> Visualize</button>
 		<div id="panel1" style="margin:20px;border:solid 2px green;display:none;" ></div>
         	</div>
               <script>
                 init_rep_hist();
-
-$('#eid').multiselect({includeSelectAllOption: true});
-$('#assay').multiselect({includeSelectAllOption: true});
-$('#dataset').multiselect({includeSelectAllOption: true});
+		init_sessions("session",foobar);
+		$('#eid').multiselect({includeSelectAllOption: true});
+		$('#assay').multiselect({includeSelectAllOption: true});
+		$('#dataset').multiselect({includeSelectAllOption: true});
               </script>
           </div>
 	<br>
@@ -86,7 +89,7 @@ $('#dataset').multiselect({includeSelectAllOption: true});
     <div id="footer">
 	<footer>
 	 <div class="container-fluid" style="width: 60%; margin: 0 auto">
-	   <p>&copy;Copyright 2018 Division of Molecular Genetics, dkfz. Tested with Safari 11, Chrome 70 at 1280x800, 1440x900, 3440x1440 resolutions</p>
+	   <p>&copy;Copyright 2019 Division of Molecular Genetics, dkfz. Tested with Safari 11, Firefox 66, Chrome 70 at 1280x800, 1440x900, 3440x1440 resolutions</p>
 	 </div> 
 	</footer>
     </div>
