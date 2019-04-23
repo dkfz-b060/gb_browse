@@ -53,7 +53,7 @@
 var foobar = {
 	"foo":'{"eid":["AK071","AK076"],"assay":["H3K27ac"],"dataset":["Raw signals"]}',
 	"bar":'{"eid":["AK124","AK199"],"assay":["DNAMethylSBS","RNAseq"],"dataset":["Broad peak"]}',
-	"IDH (all)":'{"group":["IDH"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}'
+	"IDH (all)":'{"eid":["AK015","AK041","AK066","AK068","AK076","AK085","AK102","AK103","AK124","AK199","AK213","AK231"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}'
 };
 
 
