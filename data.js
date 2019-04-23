@@ -1091,7 +1091,7 @@ var data_subtype_methyl_features =
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
 "type":"bed",
-"color":"Black","rgb":"0,0,0","mode":6,
+"color":"Black","rgb":"0,0,0",
 "info":"Subtype methylation features (DMV, LMR, PMD)",
 "data":
 [
