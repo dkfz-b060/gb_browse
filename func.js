@@ -751,6 +751,32 @@ function on_submit()
 	return true;
 }
 
+function init_sessions( elem_id, data ) {
+
+	var select_eid = document.getElementById( elem_id );
+
+	// populate
+	for(const key in data) {
+		//for(const d of data[key]) {
+		var el = document.createElement("option");
+		el.value = data[key];
+		el.textContent = key;
+		select_eid.appendChild(el);
+	}
+	// trigger first
+	on_change_session();
+}
+
+function on_change_session () {
+	let saved_data = $.parseJSON($("#session").val());
+	for(const key in saved_data) {
+		$('#'+key).multiselect("clearSelection").multiselect('refresh');
+		for(const d of saved_data[key]) {
+			$('#'+key).multiselect('select', d);
+		}
+	}	
+}
+
 function onchange_dropdown_by_eid(dropdown, data, paired_ddl_id, chkbox_id, embed_id, genome )
 {
 	if ( paired_ddl_id != "" ) {
