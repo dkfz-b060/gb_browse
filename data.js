@@ -75,6 +75,10 @@ var data_epg=[
 {"eid":"E073","group":"normal","groupid":5,"consolidated":"1","order":74,"color":"#999999","mnemonic":"normal.E073","name":"Brain Dorsolateral Prefrontal Cortex","info":""},
 {"eid":"E074","group":"normal","groupid":5,"consolidated":"1","order":75,"color":"#999999","mnemonic":"normal.E074","name":"Brain Substantia Nigra","info":""},
 {"eid":"E125","group":"normal","groupid":5,"consolidated":"1","order":76,"color":"#999999","mnemonic":"normal","name":"NH-A Astrocytes Primary Cells","info":""},
+{"eid":"LN229 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"LN229.NT","name":"LN229 cell line, NT","info":""},
+{"eid":"LN229 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"LN229.SH","name":"LN229 cell line, shSOX10","info":""},
+//{"eid":"ZH487 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"ZH487.NT","name":"ZH487 cell line, NT","info":""},
+//{"eid":"ZH487 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"ZH487.SH","name":"ZH487 cell line, shSOX10","info":""},
 ];
 
 var data_rep_hist_bw = 
@@ -319,6 +323,17 @@ var data_assay= // assays
     "desc":"Control",
     "rgb":"128,128,128"
   },
+  {
+    "name":"methyl_feature",
+    "order":36,
+    "view_1":"1",
+    "view_2":"0",
+    "active":"?",
+    "signal":"?",
+    "peak":"?",
+    "desc":"Methylation features called from WGBS",
+    "rgb":"0,0,0"
+  },
 ];
 
 var data_chr_state_18 = 
@@ -395,6 +410,7 @@ var data_chr_exp18 =
 {"eid":"E073","assay":"ChromHMM","info":"","url_tail":"E073_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E074","assay":"ChromHMM","info":"","url_tail":"E074_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E067","assay":"ChromHMM","info":"","url_tail":"E067_18_core_K27ac_stateno.bed.gz"},
+{"eid":"IDH","assay":"ChromHMM","info":"","url_tail":"E067_18_core_K27ac_stateno.bed.gz"},
 ]
 };
 
@@ -1071,3 +1087,25 @@ var data_rna_bigwig =
 ]
 };
 
+var data_subtype_methyl_features = 
+{
+"url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
+"type":"bed",
+"color":"Black","rgb":"0,0,0","mode":6,
+"info":"Subtype methylation features (DMV, LMR, PMD)",
+"data":
+[
+{"eid":"IDH","assay":"methyl_feature","info":"IDH DMVs","url_tail":"IDH_methylation_features_DMV.bed.gz"},
+{"eid":"IDH","assay":"methyl_feature","info":"IDH LMRs","url_tail":"IDH_methylation_features_LMR.bed.gz"},
+{"eid":"IDH","assay":"methyl_feature","info":"IDH PMDs","url_tail":"IDH_methylation_features_PMD.bed.gz"},
+{"eid":"MES","assay":"methyl_feature","info":"MES DMVs","url_tail":"MES_methylation_features_DMV.bed.gz"},
+{"eid":"MES","assay":"methyl_feature","info":"MES LMRs","url_tail":"MES_methylation_features_LMR.bed.gz"},
+{"eid":"MES","assay":"methyl_feature","info":"MES PMDs","url_tail":"MES_methylation_features_PMD.bed.gz"},
+{"eid":"RTK_I","assay":"methyl_feature","info":"RTK_I DMVs","url_tail":"RTK_I_methylation_features_DMV.bed.gz"},
+{"eid":"RTK_I","assay":"methyl_feature","info":"RTK_I LMRs","url_tail":"RTK_I_methylation_features_LMR.bed.gz"},
+{"eid":"RTK_I","assay":"methyl_feature","info":"RTK_I PMDs","url_tail":"RTK_I_methylation_features_PMD.bed.gz"},
+{"eid":"RTK_II","assay":"methyl_feature","info":"RTK_II DMVs","url_tail":"RTK_II_methylation_features_DMV.bed.gz"},
+{"eid":"RTK_II","assay":"methyl_feature","info":"RTK_II LMRs","url_tail":"RTK_II_methylation_features_LMR.bed.gz"},
+{"eid":"RTK_II","assay":"methyl_feature","info":"RTK_II PMDs","url_tail":"RTK_II_methylation_features_PMD.bed.gz"},
+]
+};
