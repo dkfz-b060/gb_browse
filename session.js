@@ -54,11 +54,11 @@
 
 var foobar = {
 	// 7. per-subtype, all data per-sample:
-	"IDH (all)":'{"eid":["AK015","AK041","AK066","AK068","AK076","AK085","AK102","AK103","AK124","AK199","AK213","AK231"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
-	"MES (all)":'{"eid":["AK005","AK006"",""AK030","AK055","AK071","AK072","AK079","AK081","AK088","AK091","AK134","AK139","AK153","AK185","AK188","AK195","AK218","AK227","AK236"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
-	"RTK_I (all)":'{"eid":["AK002","AK003","AK043","AK049","AK051","AK142","AK149","AK156","AK165","AK173","AK183","AK217"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
-	"RTK_II (all)":'{"eid":["AK035","AK053","AK074","AK089","AK098","AK099","AK100","AK117","AK123","AK132","AK133","AK158","AK167","AK178","AK205","AK216","AK226"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
-	"Normal (all)":'{"eid":["frontal","occipital","parietal","temporal"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}'
+	"IDH (all data, per-sample)":'{"eid":["AK015","AK041","AK066","AK068","AK076","AK085","AK102","AK103","AK124","AK199","AK213","AK231"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
+	"MES (all data, per-sample)":'{"eid":["AK005","AK006"",""AK030","AK055","AK071","AK072","AK079","AK081","AK088","AK091","AK134","AK139","AK153","AK185","AK188","AK195","AK218","AK227","AK236"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
+	"RTK_I (all data, per-sample)":'{"eid":["AK002","AK003","AK043","AK049","AK051","AK142","AK149","AK156","AK165","AK173","AK183","AK217"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
+	"RTK_II (all data, per-sample)":'{"eid":["AK035","AK053","AK074","AK089","AK098","AK099","AK100","AK117","AK123","AK132","AK133","AK158","AK167","AK178","AK205","AK216","AK226"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
+	"Normal (all data, per-sample)":'{"eid":["frontal","occipital","parietal","temporal","E067","E068","E069","E071","E072","E073","E074","E125"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}'
 };
 
 
