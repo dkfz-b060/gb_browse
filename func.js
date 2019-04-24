@@ -745,6 +745,10 @@ function on_submit()
 		data.push(data_dnamethyl_WGBS_FM);
 	else if (the_data == "RNA-seq")
 		data.push(data_rna_bigwig);
+	else if (the_data == "Methylation features")
+		data.push(data_subtype_methyl_features);
+	else if (the_data == "Superenhancers")
+		data.push(data_subtype_superenhancers);
 	}
 	visualize_data( data, filter, embed_id, false, 'hg19' );
 
