@@ -328,9 +328,9 @@ var data_assay= // assays
     "order":36,
     "view_1":"1",
     "view_2":"0",
-    "active":"?",
-    "signal":"?",
-    "peak":"?",
+    "active":"A",
+    "signal":"H",
+    "peak":"G",
     "desc":"Methylation features called from WGBS",
     "rgb":"0,0,0"
   },
