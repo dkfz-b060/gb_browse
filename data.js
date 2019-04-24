@@ -60,7 +60,7 @@ var data_epg=[
 {"eid":"AK216","group":"RTK_II","groupid":4,"consolidated":"1","order":59,"color":"#984EA3","mnemonic":"RTK_II.AK216","name":"RTK_II16","info":""},
 {"eid":"AK226","group":"RTK_II","groupid":4,"consolidated":"1","order":60,"color":"#984EA3","mnemonic":"RTK_II.AK226","name":"RTK_II17","info":""},
 {"eid":"IDH","group":"IDH","groupid":1,"consolidated":"1","order":61,"color":"#E41A1C","mnemonic":"IDH.subtype","name":"IDH subtype calls","info":""},
-{"eid":"MES.subtype","group":"MES","groupid":2,"consolidated":"1","order":62,"color":"#377EB8","mnemonic":"MES.subtype","name":"MES subtype calls","info":""},
+{"eid":"MES","group":"MES","groupid":2,"consolidated":"1","order":62,"color":"#377EB8","mnemonic":"MES.subtype","name":"MES subtype calls","info":""},
 {"eid":"RTK_I","group":"RTK_I","groupid":3,"consolidated":"1","order":63,"color":"#4DAF4A","mnemonic":"RTK_I.subtype","name":"RTK_I subtype calls","info":""},
 {"eid":"RTK_II","group":"RTK_II","groupid":4,"consolidated":"1","order":64,"color":"#984EA3","mnemonic":"RTK_II.subtype","name":"RTK_II subtype calls","info":""},
 {"eid":"frontal","group":"normal","groupid":5,"consolidated":"1","order":65,"color":"#999999","mnemonic":"frontal","name":"Brain frontal","info":""},
