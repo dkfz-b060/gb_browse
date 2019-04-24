@@ -335,6 +335,7 @@ var data_assay= // assays
     "desc":"Methylation features called from WGBS",
     "rgb":"0,0,0"
   },
+  {
   "name":"superenhancer",
   "order":37,
   "view_1":"1",
@@ -344,7 +345,7 @@ var data_assay= // assays
   "peak":"G",
   "desc":"Superenhancer analysis (ROSE2 on H3K27ac)",
   "rgb":"0,0,0"
-},
+	},
 ];
 
 var data_chr_state_18 = 
