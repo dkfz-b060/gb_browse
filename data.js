@@ -59,10 +59,10 @@ var data_epg=[
 {"eid":"AK205","group":"RTK_II","groupid":4,"consolidated":"1","order":58,"color":"#984EA3","mnemonic":"RTK_II.AK205","name":"RTK_II15","info":""},
 {"eid":"AK216","group":"RTK_II","groupid":4,"consolidated":"1","order":59,"color":"#984EA3","mnemonic":"RTK_II.AK216","name":"RTK_II16","info":""},
 {"eid":"AK226","group":"RTK_II","groupid":4,"consolidated":"1","order":60,"color":"#984EA3","mnemonic":"RTK_II.AK226","name":"RTK_II17","info":""},
-{"eid":"IDH.subtype","group":"IDH","groupid":1,"consolidated":"1","order":61,"color":"#E41A1C","mnemonic":"IDH.consensus","name":"IDH consensus calls","info":""},
-{"eid":"MES.subtype","group":"MES","groupid":2,"consolidated":"1","order":62,"color":"#377EB8","mnemonic":"MES.consensus","name":"MES consensus calls","info":""},
-{"eid":"RTK_I.subtype","group":"RTK_I","groupid":3,"consolidated":"1","order":63,"color":"#4DAF4A","mnemonic":"RTK_I.consensus","name":"RTK_I consensus calls","info":""},
-{"eid":"RTK_II.subtype","group":"RTK_II","groupid":4,"consolidated":"1","order":64,"color":"#984EA3","mnemonic":"RTK_II.consensus","name":"RTK_II consensus calls","info":""},
+{"eid":"IDH","group":"IDH","groupid":1,"consolidated":"1","order":61,"color":"#E41A1C","mnemonic":"IDH.subtype","name":"IDH subtype calls","info":""},
+{"eid":"MES.subtype","group":"MES","groupid":2,"consolidated":"1","order":62,"color":"#377EB8","mnemonic":"MES.subtype","name":"MES subtype calls","info":""},
+{"eid":"RTK_I","group":"RTK_I","groupid":3,"consolidated":"1","order":63,"color":"#4DAF4A","mnemonic":"RTK_I.subtype","name":"RTK_I subtype calls","info":""},
+{"eid":"RTK_II","group":"RTK_II","groupid":4,"consolidated":"1","order":64,"color":"#984EA3","mnemonic":"RTK_II.subtype","name":"RTK_II subtype calls","info":""},
 {"eid":"frontal","group":"normal","groupid":5,"consolidated":"1","order":65,"color":"#999999","mnemonic":"frontal","name":"Brain frontal","info":""},
 {"eid":"occipital","group":"normal","groupid":5,"consolidated":"1","order":66,"color":"#999999","mnemonic":"occipital","name":"Brain occipital","info":""},
 {"eid":"parietal","group":"normal","groupid":5,"consolidated":"1","order":67,"color":"#999999","mnemonic":"parietal","name":"Brain parietal","info":""},
@@ -77,6 +77,7 @@ var data_epg=[
 {"eid":"E125","group":"normal","groupid":5,"consolidated":"1","order":76,"color":"#999999","mnemonic":"normal.E125","name":"NH-A Astrocytes Primary Cells","info":""},
 {"eid":"LN229 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"LN229.NT","name":"LN229 cell line, NT","info":""},
 {"eid":"LN229 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"LN229.SH","name":"LN229 cell line, shSOX10","info":""},
+{"eid":"Tumour","group":"glioblastoma","groupid":6,"consolidated":"1","order":79,"color":"#000000","mnemonic":"pan.GB","name":"pan-glioblastoma","info":""},
 //{"eid":"ZH487 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"ZH487.NT","name":"ZH487 cell line, NT","info":""},
 //{"eid":"ZH487 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"ZH487.SH","name":"ZH487 cell line, shSOX10","info":""},
 ];
@@ -334,6 +335,16 @@ var data_assay= // assays
     "desc":"Methylation features called from WGBS",
     "rgb":"0,0,0"
   },
+  "name":"superenhancer",
+  "order":37,
+  "view_1":"1",
+  "view_2":"0",
+  "active":"A",
+  "signal":"H",
+  "peak":"G",
+  "desc":"Superenhancer analysis (ROSE2 on H3K27ac)",
+  "rgb":"0,0,0"
+},
 ];
 
 var data_chr_state_18 = 
@@ -1095,17 +1106,37 @@ var data_subtype_methyl_features =
 "info":"Subtype methylation features (DMV, LMR, PMD)",
 "data":
 [
-{"eid":"IDH.subtype","assay":"methyl_feature","info":"IDH DMVs","url_tail":"IDH_methylation_features_DMV.bed.gz"},
-{"eid":"IDH.subtype","assay":"methyl_feature","info":"IDH LMRs","url_tail":"IDH_methylation_features_LMR.bed.gz"},
-{"eid":"IDH.subtype","assay":"methyl_feature","info":"IDH PMDs","url_tail":"IDH_methylation_features_PMD.bed.gz"},
-{"eid":"MES.subtype","assay":"methyl_feature","info":"MES DMVs","url_tail":"MES_methylation_features_DMV.bed.gz"},
-{"eid":"MES.subtype","assay":"methyl_feature","info":"MES LMRs","url_tail":"MES_methylation_features_LMR.bed.gz"},
-{"eid":"MES.subtype","assay":"methyl_feature","info":"MES PMDs","url_tail":"MES_methylation_features_PMD.bed.gz"},
-{"eid":"RTK_I.subtype","assay":"methyl_feature","info":"RTK_I DMVs","url_tail":"RTK_I_methylation_features_DMV.bed.gz"},
-{"eid":"RTK_I.subtype","assay":"methyl_feature","info":"RTK_I LMRs","url_tail":"RTK_I_methylation_features_LMR.bed.gz"},
-{"eid":"RTK_I.subtype","assay":"methyl_feature","info":"RTK_I PMDs","url_tail":"RTK_I_methylation_features_PMD.bed.gz"},
-{"eid":"RTK_II.subtype","assay":"methyl_feature","info":"RTK_II DMVs","url_tail":"RTK_II_methylation_features_DMV.bed.gz"},
-{"eid":"RTK_II.subtype","assay":"methyl_feature","info":"RTK_II LMRs","url_tail":"RTK_II_methylation_features_LMR.bed.gz"},
-{"eid":"RTK_II.subtype","assay":"methyl_feature","info":"RTK_II PMDs","url_tail":"RTK_II_methylation_features_PMD.bed.gz"},
+{"eid":"IDH","assay":"methyl_feature","info":"IDH DMVs","url_tail":"IDH_methylation_features_DMV.bed.gz"},
+{"eid":"IDH","assay":"methyl_feature","info":"IDH LMRs","url_tail":"IDH_methylation_features_LMR.bed.gz"},
+{"eid":"IDH","assay":"methyl_feature","info":"IDH PMDs","url_tail":"IDH_methylation_features_PMD.bed.gz"},
+{"eid":"MES","assay":"methyl_feature","info":"MES DMVs","url_tail":"MES_methylation_features_DMV.bed.gz"},
+{"eid":"MES","assay":"methyl_feature","info":"MES LMRs","url_tail":"MES_methylation_features_LMR.bed.gz"},
+{"eid":"MES","assay":"methyl_feature","info":"MES PMDs","url_tail":"MES_methylation_features_PMD.bed.gz"},
+{"eid":"RTK_I","assay":"methyl_feature","info":"RTK_I DMVs","url_tail":"RTK_I_methylation_features_DMV.bed.gz"},
+{"eid":"RTK_I","assay":"methyl_feature","info":"RTK_I LMRs","url_tail":"RTK_I_methylation_features_LMR.bed.gz"},
+{"eid":"RTK_I","assay":"methyl_feature","info":"RTK_I PMDs","url_tail":"RTK_I_methylation_features_PMD.bed.gz"},
+{"eid":"RTK_II","assay":"methyl_feature","info":"RTK_II DMVs","url_tail":"RTK_II_methylation_features_DMV.bed.gz"},
+{"eid":"RTK_II","assay":"methyl_feature","info":"RTK_II LMRs","url_tail":"RTK_II_methylation_features_LMR.bed.gz"},
+{"eid":"RTK_II","assay":"methyl_feature","info":"RTK_II PMDs","url_tail":"RTK_II_methylation_features_PMD.bed.gz"},
+]
+};
+
+var data_subtype_superenhancers = 
+{
+"url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
+"type":"bed",
+"color":"Black","rgb":"0,0,0",
+"info":"Subtype superenhancer analysis",
+"data":
+[
+{"eid":"Tumour","assay":"superenhancer","info":"pan-tumour SEs","url_tail":"GB_H3K27ac_superenhancers.bed.gz"},
+{"eid":"IDH","assay":"superenhancer","info":"IDH-specific pan-tumour SEs (logFC 1, FDR 0.1)","url_tail":"GB_H3K27ac_superenhancers_IDH_specific_FDR_0.1_log2FC_1.bed.gz"},
+{"eid":"IDH","assay":"superenhancer","info":"IDH subtype SEs","url_tail":"IDH_subtype_H3K27ac_superenhancers.bed.gz"},
+{"eid":"MES","assay":"superenhancer","info":"MES-specific pan-tumour SEs (logFC 1, FDR 0.1)","url_tail":"GB_H3K27ac_superenhancers_MES_specific_FDR_0.1_log2FC_1.bed.gz"},
+{"eid":"MES","assay":"superenhancer","info":"MES subtype SEs","url_tail":"MES_subtype_H3K27ac_superenhancers.bed.gz"},
+{"eid":"RTK_I","assay":"superenhancer","info":"RTK_I-specific pan-tumour SEs (logFC 1, FDR 0.1)","url_tail":"GB_H3K27ac_superenhancers_RTK_I_specific_FDR_0.1_log2FC_1.bed.gz"},
+{"eid":"RTK_I","assay":"superenhancer","info":"RTK_I subtype SEs","url_tail":"RTK_I_subtype_H3K27ac_superenhancers.bed.gz"},
+{"eid":"RTK_II","assay":"superenhancer","info":"RTK_II-specific pan-tumour SEs (logFC 1, FDR 0.1)","url_tail":"GB_H3K27ac_superenhancers_RTK_II_specific_FDR_0.1_log2FC_1.bed.gz"},
+{"eid":"RTK_II","assay":"superenhancer","info":"RTK_II subtype SEs","url_tail":"RTK_II_subtype_H3K27ac_superenhancers.bed.gz"},
 ]
 };
