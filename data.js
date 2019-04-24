@@ -332,7 +332,7 @@ var data_assay= // assays
     "active":"A",
     "signal":"H",
     "peak":"G",
-    "desc":"Methylation features called from WGBS",
+    "desc":"DMVs, LMRs, PMDs (per subtype)",
     "rgb":"0,0,0"
   },
   {
@@ -343,7 +343,7 @@ var data_assay= // assays
   "active":"A",
   "signal":"H",
   "peak":"G",
-  "desc":"Superenhancer analysis (ROSE2 on H3K27ac)",
+  "desc":"Superenhancers",
   "rgb":"0,0,0"
 	},
 ];
@@ -422,7 +422,6 @@ var data_chr_exp18 =
 {"eid":"E073","assay":"ChromHMM","info":"","url_tail":"E073_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E074","assay":"ChromHMM","info":"","url_tail":"E074_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E067","assay":"ChromHMM","info":"","url_tail":"E067_18_core_K27ac_stateno.bed.gz"},
-{"eid":"IDH","assay":"ChromHMM","info":"","url_tail":"E067_18_core_K27ac_stateno.bed.gz"},
 ]
 };
 

@@ -849,6 +849,7 @@ function init_rep_hist()
 	big_data.data = big_data.data.concat(data_dnamethyl_WGBS_FM.data);
 	big_data.data = big_data.data.concat(data_rna_bigwig.data);
 	big_data.data = big_data.data.concat(data_subtype_methyl_features.data);
+	big_data.data = big_data.data.concat(data_subtype_superenhancers.data);
 	big_data.info = "";
 	// consolidated epg
 	populate_dropdown_by_eid(  "eid", [big_data]);
