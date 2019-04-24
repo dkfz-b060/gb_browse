@@ -909,3 +909,12 @@ function onclick_btn_chr_exp18( btn )
     return true;
 }
 
+function onchange_ddl_assay_rep_subtype_methyl_features(dropdown)
+{
+	return onchange_dropdown_by_assay(dropdown, [data_subtype_methyl_features], "ddl_eid_rep_subtype_methyl_features", "chkbox_new_page_subtype_methyl_features", "embed_rep_subtype_methyl_features" );
+}
+
+function onchange_ddl_eid_rep_subtype_methyl_features(dropdown)
+{
+	return onchange_dropdown_by_eid(dropdown, [data_subtype_methyl_features], "ddl_assay_rep_subtype_methyl_features", "chkbox_new_page_subtype_methyl_features", "embed_rep_subtype_methyl_features" );
+}
