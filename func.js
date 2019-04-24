@@ -836,12 +836,15 @@ function sleep( ms )
 	setTimeout(function(){}, ms );
 }
 
+// on page load: generate list of samples to list
 function init_rep_hist()
 {
-	//let big_data = data_rep_hist_bw;
-	let big_data = data_epg;
-	//big_data.data = big_data.data.concat(data_dnamethyl_WGBS_FM.data);
-	//big_data.data = big_data.data.concat(data_rna_bigwig.data);
+	// looks at this array of histone bigWigs,
+	let big_data = data_rep_hist_bw;
+	// add further samples from other data types
+	big_data.data = big_data.data.concat(data_dnamethyl_WGBS_FM.data);
+	big_data.data = big_data.data.concat(data_rna_bigwig.data);
+	big_data.data = big_data.data.concat(data_subtype_methyl_features.data);
 	big_data.info = "";
 	// consolidated epg
 	populate_dropdown_by_eid(  "eid", [big_data]);
