@@ -39,10 +39,10 @@ var foobar = {
 	"RTK_I (all data)":'{"eid":["AK002","AK003","AK043","AK049","AK051","AK142","AK149","AK156","AK165","AK173","AK183","AK217","RTK_I"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq","methyl_feature"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}',
 	"RTK_II (all data)":'{"eid":["AK035","AK053","AK074","AK089","AK098","AK099","AK100","AK117","AK123","AK132","AK133","AK158","AK167","AK178","AK205","AK216","AK226","RTK_II"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq","methyl_feature"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states","Methylation features"]}',
 	"Normal (all data)":'{"eid":["frontal","occipital","parietal","temporal","E067","E068","E069","E071","E072","E073","E074","E125"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","DNAMethylSBS","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states","Methylation features"]}',
-	// Methylation features
-	"Methylation features (per-subtype)":'{"eid":["IDH","MES","RTK_I","RTK_II"],"assay":["methyl_feature"],"dataset":["Methylation features"]}',
+	// Methylation analysis
+	"Methylation analysis":'{"eid":["AK002","AK003","AK005","AK006","AK015","AK030","AK035","AK041","AK043","AK049","AK051","AK053","AK055","AK066","AK068","AK071","AK072","AK074","AK076","AK079","AK081","AK085","AK088","AK089","AK091","AK098","AK099","AK100","AK102","AK103","AK117","AK123","AK124","AK132","AK133","AK134","AK139","AK142","AK149","AK153","AK156","AK158","AK165","AK167","AK173","AK178","AK183","AK185","AK188","AK195","AK199","AK205","AK213","AK216","AK217","AK218","AK226","AK227","AK231","AK236","frontal","occipital","parietal","temporal","IDH","MES","RTK_I","RTK_II"],"assay":["DNAMethylSBS","methyl_feature"],"dataset":["Raw signals","Methylation features"]}',
 	// SE analysis
-	"Superenhancer analysis (per-subtype)":'{"eid":["AK066","AK071","AK076","AK089","AK091","AK100","AK124","AK139","AK142","AK149","AK153","AK156","AK158","AK173","AK178","AK183","AK199","AK213","AK216","AK231","IDH","MES","RTK_I","RTK_II"],"assay":["H3K27ac","superenhancer"],"dataset":["Raw signals","Narrow peak","Superenhancers"]}'
+	"Superenhancer analysis":'{"eid":["AK066","AK071","AK076","AK089","AK091","AK100","AK124","AK139","AK142","AK149","AK153","AK156","AK158","AK173","AK178","AK183","AK199","AK213","AK216","AK231","IDH","MES","RTK_I","RTK_II","Tumour"],"assay":["H3K27ac","superenhancer"],"dataset":["Raw signals","Narrow peak","Superenhancers"]}'
 };
 
 
