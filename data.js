@@ -78,6 +78,7 @@ var data_epg=[
 {"eid":"LN229 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"LN229.NT","name":"LN229 cell line, NT","info":""},
 {"eid":"LN229 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"LN229.SH","name":"LN229 cell line, shSOX10","info":""},
 {"eid":"Tumour","group":"glioblastoma","groupid":6,"consolidated":"1","order":79,"color":"#000000","mnemonic":"pan.GB","name":"pan-glioblastoma","info":""},
+{"eid":"NBr","group":"normal","groupid":5,"consolidated":"1","order":80,"color":"#999999","mnemonic":"NBr.subtype","name":"Normal brain","info":""},
 //{"eid":"ZH487 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"ZH487.NT","name":"ZH487 cell line, NT","info":""},
 //{"eid":"ZH487 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"ZH487.SH","name":"ZH487 cell line, shSOX10","info":""},
 ];
@@ -422,6 +423,11 @@ var data_chr_exp18 =
 {"eid":"E073","assay":"ChromHMM","info":"","url_tail":"E073_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E074","assay":"ChromHMM","info":"","url_tail":"E074_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E067","assay":"ChromHMM","info":"","url_tail":"E067_18_core_K27ac_stateno.bed.gz"},
+{"eid":"IDH","assay":"ChromHMM","info":"","url_tail":"IDH_ChromHMM_18states.bed.gz"},
+{"eid":"MES","assay":"ChromHMM","info":"","url_tail":"MES_ChromHMM_18states.bed.gz"},
+{"eid":"RTK_I","assay":"ChromHMM","info":"","url_tail":"RTK_I_ChromHMM_18states.bed.gz"},
+{"eid":"RTK_II","assay":"ChromHMM","info":"","url_tail":"RTK_II_ChromHMM_18states.bed.gz"},
+{"eid":"NBr","assay":"ChromHMM","info":"","url_tail":"NBr_ChromHMM_18states.bed.gz"},
 ]
 };
 
