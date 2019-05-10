@@ -15,6 +15,10 @@
 //- for all samples (GB+NBr): methylation bigwigs
 //- DMV+LMR+PMD consensus per subtype
 
+//4. ChromHMM analysis
+//- ChromHMM for all samples (incl normal samples)
+//- ChromHMM per subtype
+
 //5. per-subtype, all data per-sample
 //for each subtype separately, for all samples in the subtype:
 //- methylation bigwig

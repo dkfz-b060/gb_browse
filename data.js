@@ -79,8 +79,6 @@ var data_epg=[
 {"eid":"LN229 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"LN229.SH","name":"LN229 cell line, shSOX10","info":""},
 {"eid":"Tumour","group":"glioblastoma","groupid":6,"consolidated":"1","order":79,"color":"#000000","mnemonic":"pan.GB","name":"pan-glioblastoma","info":""},
 {"eid":"NBr","group":"normal","groupid":5,"consolidated":"1","order":80,"color":"#999999","mnemonic":"NBr.subtype","name":"Normal brain","info":""},
-//{"eid":"ZH487 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"ZH487.NT","name":"ZH487 cell line, NT","info":""},
-//{"eid":"ZH487 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"ZH487.SH","name":"ZH487 cell line, shSOX10","info":""},
 ];
 
 var data_rep_hist_bw = 
@@ -435,7 +433,7 @@ var data_rep_hist_npeak =
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
 "type":"bed",
-"color":"Red","rgb":"255,0,0","mode":6,
+"color":"Red","rgb":"255,0,0","mode":"thin",
 "info":"Narrow peaks",
 "data":
 [
@@ -565,7 +563,7 @@ var data_rep_hist_bpeak =
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
 "type":"bed",
-"color":"Red","rgb":"255,0,0","mode":6,
+"color":"Red","rgb":"255,0,0","mode":"thin",
 "info":"Broad peaks",
 "data":
 [
@@ -696,7 +694,7 @@ var data_hist_npeak =
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
 "type":"bed",
-"color":"Red","rgb":"255,0,0","mode":6,
+"color":"Red","rgb":"255,0,0","mode":"thin",
 "info":"Narrow peaks",
 "data":
 [
@@ -826,7 +824,7 @@ var data_hist_bpeak =
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
 "type":"bed",
-"color":"Red","rgb":"255,0,0","mode":6,
+"color":"Red","rgb":"255,0,0","mode":"thin",
 "info":"Broad peaks",
 "data":
 [
