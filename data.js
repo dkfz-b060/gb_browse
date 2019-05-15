@@ -332,7 +332,7 @@ var data_assay= // assays
     "signal":"H",
     "peak":"G",
     "desc":"DMVs, LMRs, PMDs (per subtype)",
-    "rgb":"0,0,0"
+    "rgb":"250,190,200"
   },
   {
   "name":"superenhancer",
@@ -343,7 +343,7 @@ var data_assay= // assays
   "signal":"H",
   "peak":"G",
   "desc":"Superenhancers",
-  "rgb":"0,0,0"
+  "rgb":"127,255,212"
 	},
 ];
 
@@ -1110,7 +1110,7 @@ var data_subtype_methyl_features =
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
 "type":"bed",
-"color":"Black","rgb":"0,0,0",
+"color":"Pink","rgb":"255,192,203",
 "info":"Subtype methylation features (DMV, LMR, PMD)",
 "data":
 [

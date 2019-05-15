@@ -58,7 +58,8 @@
           <a name="ChipSeq_DNaseSeq"></a>
           <h1>Glioblastoma</h1>
             <h3>Histone ChIP-seq</h3>
-	    <div>
+	    <div class="row">
+               <div class="col-sm-5">
                <section>Sample ID: <select id="eid" multiple="multiple"></select></section>
                <section>Assay: <select id="assay" multiple="multiple"></select></section>
                <section>Dataset: <select id="dataset" multiple="multiple">
@@ -68,19 +69,35 @@
 		<option>Chromatin states</option>
 		<option>Methylation features</option>
 		<option>Superenhancers</option>				
+		</select></section></div>
+		<div class="col-sm-7">
+		<p>you can select some pre-defined session here, or cell line<br>Note: they are independent!!</p>
+		<section>Cell line: <select id="celline">
+			<option>foo</option>
+			<option>bar</option>
 		</select></section>
-		<section>Session: <select id="session" onchange="on_change_session(this)"></select></section>
+		<section>Session: <select id="session" onchange="on_change_session(this)"></select></section></div>
+	    </div>
+	    <div class="row">
                   <br><input type="checkbox" id="chkbox_new_page"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><button onclick="on_submit(this)"> Visualize</button>
+                <br><button onclick="on_submit(this)" class="btn btn-default"> Visualize</button>
+		<button id="deselectAll" class="btn btn-default">Deselect all</button>
 		<div id="panel1" style="margin:20px;border:solid 2px green;display:none;" ></div>
-        	</div>
+	    </div>
               <script>
                 init_rep_hist();
-		init_sessions("session",foobar);
+		init_sessions("session",sessions);
 		$('#eid').multiselect({includeSelectAllOption: true});
 		$('#assay').multiselect({includeSelectAllOption: true});
 		$('#dataset').multiselect({includeSelectAllOption: true});
 		$('#session').multiselect({includeSelectAllOption: false});
+		$('#celline').multiselect({includeSelectAllOption: false});
+		$('#deselectAll').on('click', function() {
+		    $('#eid').multiselect("clearSelection").multiselect('refresh');
+		    $('#assay').multiselect("clearSelection").multiselect('refresh');
+		    $('#dataset').multiselect("clearSelection").multiselect('refresh');
+		    //$('#session').multiselect("clearSelection").multiselect('refresh');
+		});
               </script>
           </div>
 	<br>

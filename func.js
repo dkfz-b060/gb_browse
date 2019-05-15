@@ -763,7 +763,7 @@ function init_sessions( elem_id, data ) {
 	for(const key in data) {
 		//for(const d of data[key]) {
 		var el = document.createElement("option");
-		el.value = data[key];
+		el.value = key;
 		el.textContent = key;
 		select_eid.appendChild(el);
 	}
@@ -772,7 +772,7 @@ function init_sessions( elem_id, data ) {
 }
 
 function on_change_session () {
-	let saved_data = $.parseJSON($("#session").val());
+	let saved_data = sessions[$("#session").val()];
 	for(const key in saved_data) {
 		$('#'+key).multiselect("clearSelection").multiselect('refresh');
 		for(const d of saved_data[key]) {
