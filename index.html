@@ -117,6 +117,8 @@
                   <br><input type="checkbox" id="chkbox_new_page"> Open in a new page (deactivate pop-up blockers)</input>
                 <br><button onclick="on_submit(this)" class="btn btn-default"> Visualize</button>
 		<button id="deselectAll" class="btn btn-default">Deselect all</button>
+		<button id="selectAllSamp" class="btn btn-default">Select all samples</button>
+		<button id="deselectAllSamp" class="btn btn-default">Deselect all samples</button>
 		<div id="panel1" style="margin:20px;border:solid 2px green;display:none;" ></div>
 	    </div>
               <script>
@@ -132,6 +134,12 @@
 		    $('#assay').multiselect("clearSelection").multiselect('refresh');
 		    $('#dataset').multiselect("clearSelection").multiselect('refresh');
 		    //$('#session').multiselect("clearSelection").multiselect('refresh');
+		});
+		$('#selectAllSamp').on('click', function() {
+		    $('#eid').multiselect("selectAll").multiselect('refresh');
+		});
+		$('#deselectAllSamp').on('click', function() {
+		    $('#eid').multiselect("clearSelection").multiselect('refresh');
 		});
               </script>
           </div>
