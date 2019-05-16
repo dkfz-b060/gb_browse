@@ -281,10 +281,19 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 						if ( data[k].hasOwnProperty( "thmax" ) )
 							obj.qtc[ "thmax" ] = data[k].thmax;
 					}
+					// based on the "signal" attribute in data_assays in data.js: 
+					// select y-axis thresholds
+					// low signal: H3K9me3
 					else if ( data_elem.assay && assay_json[ data_elem.assay ].signal == "L" )	{
 						obj.qtc[ "thmin" ] = 2;
 						obj.qtc[ "thmax" ] = 15;
 					}
+					// v. high signal: RNAseq, K27ac, K4me3
+					else if ( data_elem.assay && assay_json[ data_elem.assay ].signal == "VeryHigh" )	{
+						obj.qtc[ "thmin" ] = 2;
+						obj.qtc[ "thmax" ] = 150;
+					}
+					// other histone marks
 					else {
 						obj.qtc[ "thmin" ] = 2;
 						obj.qtc[ "thmax" ] = 40;

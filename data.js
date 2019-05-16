@@ -219,7 +219,7 @@ var data_assay= // assays
     "view_1":"1",
     "view_2":"1",
     "active":"A",
-    "signal":"H",
+    "signal":"VeryHigh",
     "peak":"G",
     "desc":"H3K27ac",
     "rgb":"205,92,92"
@@ -241,7 +241,7 @@ var data_assay= // assays
     "view_1":"1",
     "view_2":"1",
     "active":"A",
-    "signal":"H",
+    "signal":"VeryHigh",
     "peak":"G",
     "desc":"H3K4me3",
     "rgb":"255,0,0"
@@ -263,7 +263,7 @@ var data_assay= // assays
     "view_1":"1",
     "view_2":"1",
     "active":"A",
-    "signal":"L",
+    "signal":"H",
     "peak":"G",
     "desc":"H3K36me3",
     "rgb":"0,128,0"
@@ -274,7 +274,7 @@ var data_assay= // assays
     "view_1":"1",
     "view_2":"1",
     "active":"R",
-    "signal":"L",
+    "signal":"H",
     "peak":"G",
     "desc":"H3K27me3",
     "rgb":"128,128,128"
@@ -307,7 +307,7 @@ var data_assay= // assays
     "view_1":"1",
     "view_2":"0",
     "active":"?",
-    "signal":"?",
+    "signal":"VeryHigh",
     "peak":"?",
     "desc":"RNA-Seq",
     "rgb":"0,0,0"
