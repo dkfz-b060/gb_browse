@@ -565,7 +565,8 @@ var data_rep_hist_bpeak =
 {
 "url_head":"https://raw.githubusercontent.com/dkfz-b060/glioblastoma/master/browser_tracks/",
 "type":"bed",
-"options":{"color":"Black","rgb":"0,0,0","mode":1,
+"options": {
+	"color":"Black","rgb":"255,0,0","mode":"thin",
 },
 "info":"Broad peaks",
 "data":
