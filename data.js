@@ -214,30 +214,8 @@ var data_rep_hist_bw =
 var data_assay= // assays
 [
   {
-    "name":"H3K27me3",
-    "order":1,
-    "view_1":"1",
-    "view_2":"1",
-    "active":"R",
-    "signal":"L",
-    "peak":"G",
-    "desc":"H3K27me3",
-    "rgb":"255,160,122"
-  },
-  {
-    "name":"H3K9me3",
-    "order":3,
-    "view_1":"1",
-    "view_2":"1",
-    "active":"R",
-    "signal":"L",
-    "peak":"G",
-    "desc":"H3K9me3",
-    "rgb":"216,191,216"
-  },
-  {
     "name":"H3K27ac",
-    "order":17,
+    "order":1,
     "view_1":"1",
     "view_2":"1",
     "active":"A",
@@ -247,52 +225,74 @@ var data_assay= // assays
     "rgb":"205,92,92"
   },
   {
-    "name":"H3K36me3",
-    "order":18,
-    "view_1":"1",
-    "view_2":"1",
-    "active":"A",
-    "signal":"L",
-    "peak":"G",
-    "desc":"H3K36me3",
-    "rgb":"255,0,255"
-  },
-  {
-    "name":"H3K4me1",
-    "order":20,
-    "view_1":"1",
-    "view_2":"1",
-    "active":"A",
-    "signal":"H",
-    "peak":"G",
-    "desc":"H3K4me1",
-    "rgb":"255,140,0"
-  },
+  "name":"superenhancer",
+  "order":2,
+  "view_1":"1",
+  "view_2":"0",
+  "active":"A",
+  "signal":"H",
+  "peak":"G",
+  "desc":"Superenhancers",
+  "rgb":"127,255,212"
+	},  
   {
     "name":"H3K4me3",
-    "order":22,
+    "order":3,
     "view_1":"1",
     "view_2":"1",
     "active":"A",
     "signal":"H",
     "peak":"G",
     "desc":"H3K4me3",
-    "rgb":"255,165,0"
+    "rgb":"255,0,0"
+  },  
+  {
+    "name":"H3K4me1",
+    "order":4,
+    "view_1":"1",
+    "view_2":"1",
+    "active":"A",
+    "signal":"H",
+    "peak":"G",
+    "desc":"H3K4me1",
+    "rgb":"194,225,5"
   },
   {
-    "name":"DNAMethylSBS",
-    "order":32,
+    "name":"H3K36me3",
+    "order":5,
     "view_1":"1",
-    "view_2":"0",
-    "active":"?",
-    "signal":"?",
-    "peak":"?",
-    "desc":"WGB-Seq",
-    "rgb":"0,128,128"
+    "view_2":"1",
+    "active":"A",
+    "signal":"L",
+    "peak":"G",
+    "desc":"H3K36me3",
+    "rgb":"0,128,0"
   },
+  {
+    "name":"H3K27me3",
+    "order":6,
+    "view_1":"1",
+    "view_2":"1",
+    "active":"R",
+    "signal":"L",
+    "peak":"G",
+    "desc":"H3K27me3",
+    "rgb":"128,128,128"
+  },
+  {
+    "name":"H3K9me3",
+    "order":7,
+    "view_1":"1",
+    "view_2":"1",
+    "active":"R",
+    "signal":"L",
+    "peak":"G",
+    "desc":"H3K9me3",
+    "rgb":"138,145,208"
+  },  
   {
     "name":"ChromHMM",
-    "order":33,
+    "order":8,
     "view_1":"1",
     "view_2":"0",
     "active":"?",
@@ -303,7 +303,7 @@ var data_assay= // assays
   },
   {
     "name":"RNAseq",
-    "order":34,
+    "order":9,
     "view_1":"1",
     "view_2":"0",
     "active":"?",
@@ -311,7 +311,29 @@ var data_assay= // assays
     "peak":"?",
     "desc":"RNA-Seq",
     "rgb":"0,0,0"
+  },  
+  {
+    "name":"DNAMethylSBS",
+    "order":10,
+    "view_1":"1",
+    "view_2":"0",
+    "active":"?",
+    "signal":"?",
+    "peak":"?",
+    "desc":"WGB-Seq",
+    "rgb":"0,128,128"
   },
+  {
+    "name":"methyl_feature",
+    "order":11,
+    "view_1":"1",
+    "view_2":"0",
+    "active":"A",
+    "signal":"H",
+    "peak":"G",
+    "desc":"DMVs, LMRs, PMDs (per subtype)",
+    "rgb":"250,190,200"
+  },  
   {
     "name":"Input",
     "order":35,
@@ -323,28 +345,6 @@ var data_assay= // assays
     "desc":"Control",
     "rgb":"128,128,128"
   },
-  {
-    "name":"methyl_feature",
-    "order":36,
-    "view_1":"1",
-    "view_2":"0",
-    "active":"A",
-    "signal":"H",
-    "peak":"G",
-    "desc":"DMVs, LMRs, PMDs (per subtype)",
-    "rgb":"250,190,200"
-  },
-  {
-  "name":"superenhancer",
-  "order":37,
-  "view_1":"1",
-  "view_2":"0",
-  "active":"A",
-  "signal":"H",
-  "peak":"G",
-  "desc":"Superenhancers",
-  "rgb":"127,255,212"
-	},
 ];
 
 var data_chr_state_18 = 
