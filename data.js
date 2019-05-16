@@ -310,7 +310,7 @@ var data_assay= // assays
     "signal":"?",
     "peak":"?",
     "desc":"RNA-Seq",
-    "rgb":"176,196,222"
+    "rgb":"255,255,255"
   },
   {
     "name":"Input",
