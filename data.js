@@ -222,9 +222,7 @@ var data_assay= // assays
     "signal":"H",
     "peak":"G",
     "desc":"H3K27ac",
-    "rgb":"205,92,92",
-    "mode":1,
-	"qtc":{"anglescale":1,"pr":205,"pg":92,"pb":92,"nr":255,"ng":0,"nb":0,"pth":"#000099","nth":"#800000","thtype":1,"thmin":2,"thmax":60,"thpercentile":90,"height":30,"summeth":2,"smooth":3}
+    "rgb":"205,92,92"
   },
   {
   "name":"superenhancer",
