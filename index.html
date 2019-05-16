@@ -113,12 +113,18 @@
 		</select></section>
 		<section>Session: <select id="session" onchange="on_change_session(this)"></select></section></div>
 	    </div>
-	    <div class="row">
-                  <br><input type="checkbox" id="chkbox_new_page"> Open in a new page (deactivate pop-up blockers)</input>
-                <br><button onclick="on_submit(this)" class="btn btn-default"> Visualize</button>
+	    
+		<div class="row">		
 		<button id="deselectAll" class="btn btn-default">Deselect all</button>
 		<button id="selectAllSamp" class="btn btn-default">Select all samples</button>
 		<button id="deselectAllSamp" class="btn btn-default">Deselect all samples</button>
+		</div>
+		
+	    <div class="row">
+                  <br><input type="checkbox" id="chkbox_new_page"> Open in a new page (deactivate pop-up blockers)</input>
+                <br><button onclick="on_submit(this)" class="btn btn-default">Launch browser session!</button>
+		</div>		
+		
 		<div id="panel1" style="margin:20px;border:solid 2px green;display:none;" ></div>
 	    </div>
               <script>
@@ -135,8 +141,9 @@
 		    $('#dataset').multiselect("clearSelection").multiselect('refresh');
 		    //$('#session').multiselect("clearSelection").multiselect('refresh');
 		});
+		// this button doesn't work yet!
 		$('#selectAllSamp').on('click', function() {
-		    $('#eid').multiselect("selectAll").multiselect('refresh');
+		    $('#eid').multiselect("selectAll");
 		});
 		$('#deselectAllSamp').on('click', function() {
 		    $('#eid').multiselect("clearSelection").multiselect('refresh');
