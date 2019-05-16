@@ -57,7 +57,38 @@
       <div class="page-header" style="width: 60%; margin: 0 auto">
           <a name="ChipSeq_DNaseSeq"></a>
           <h1>Glioblastoma</h1>
-            <h3>Histone ChIP-seq</h3>
+            <h2>Genome Browser</h2>
+				<h3>Overview</h3>
+				<p>The large number of genome tracks derived from the samples, datas and analyses generated for this publication can be visualised in the WashU Epigenome Browser. Our data and code is publicly available at the GEO (<a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121723">GSE121723</a>) and on <a href="https://github.com/dkfz-b060/">Github</a>.</p>
+				
+				<p>This webpage will generate a JSON session file, based on your selected options below, that will then be sent to the <a href="http://epigenomegateway.wustl.edu/">WashU Epigenome Browser</a> for viewing.</p>
+				
+				<h3>GB tumour data launcher</h3>
+				
+				<p>An explainer for each option:
+					<ul>
+						<li><b>Sample ID</b>: select individual tumours and normal samples, subtype consensus, and pan-GB calls.</li>
+						<li><b>Assay</b>: data types: RNAseq, WGBS, histone ChIPseq, Superenhancer and Methylation Feature (DMV, LMR, PMD) analyses.</li>
+						<li><b>Dataset</b>: analysis types: Raw signals, narrow/broad peak calls (MACS2), ChromHMM states, Methylation features, Superenhancers.</li>
+						<li><b>Session</b>: pre-defined sessions (see below for details).</li>
+					</ul>
+					
+					These can be individually (de-)selected at the user's discretion.
+				</p>
+				
+				<p>Pre-defined sessions:
+					<ul>
+						<li><b>All data</b>: EVERY track in the dataset. (Warning: >500 tracks!)</li>
+						<li><b>IDH (all data)</b>: All tracks for the IDH subtype.</li>
+						<li><b>MES (all data)</b>: All tracks for the MES subtype.</li>
+						<li><b>RTK_I (all data)</b>: All tracks for the RTK_I subtype.</li>
+						<li><b>RTK_II (all data)</b>: All tracks for the RTK_II subtype.</li>
+						<li><b>Methylation data and analysis</b>: WGBS calls for all samples, with methylation feature (DMV, LMR, PMD) calls.</li>
+						<li><b>Superenhancer analysis</b>: H3K27ac samples with MACS2 narrow peak calls, and SE calls from ROSE2.</li>
+						<li><b>Chromatin state annotation (ChromHMM)</b>: Sample and subtype consensus ChromHMM models, with all RNAseq samples.</li>
+					</ul>
+				</p>
+				
 	    <div class="row">
                <div class="col-sm-5">
                <section>Sample ID: <select id="eid" multiple="multiple"></select></section>
