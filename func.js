@@ -15,7 +15,7 @@ var height_row_bigwig_default	= 30;
 var height_row_cat_default	= 10; 
 var height_row_qcat_default 	= 150;
 var height_row_catmat_default 	= 150;
-var height_row_bed_default	= 30; 
+var height_row_bed_default	= 10; 
 var height_row_interact_default	= 120; 
 var height_row_hammock_default	= 18;
 
@@ -396,7 +396,7 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 					var height_row_bed = height_row_bed_default;
 
 					obj= { "type": "bed", "name": "", "url": "", "mode": 2, 
-						"qtc": { "height" : height_row_bed, 
+						"qtc": { "height" : height_row_bed, "pr":0, "pg":0, "pb":0, // set default colours for bed tracks
 							"fontsize":"0pt","fontfamily":"sans-serif","fontbold":false, } };
 				
 					if ( data_elem.url_tail.search("tagAlign") >= 0 )
@@ -408,7 +408,7 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 					else if ( data_elem.url_tail.search("imputedPeak") >= 0 ) // imputed peak calls
 						obj.mode = 6;
 					else
-						obj.mode = 1; // full mode for other beds
+						obj.mode = 2; // thin mode for other beds
 
 					break;
 
