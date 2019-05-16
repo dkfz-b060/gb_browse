@@ -72,8 +72,7 @@
 						<li><b>Dataset</b>: analysis types: Raw signals, narrow/broad peak calls (MACS2), ChromHMM states, Methylation features, Superenhancers.</li>
 						<li><b>Session</b>: pre-defined sessions (see below for details).</li>
 					</ul>
-					
-					These can be individually (de-)selected at the user's discretion.
+					These can be individually (de-)selected at the user's discretion. Use the "Deselect all" button to wipe all picked options, and if you want to select everything, pick the "All data" session.
 				</p>
 				
 				<br>
@@ -143,7 +142,7 @@
 		});
 		// this button doesn't work yet!
 		$('#selectAllSamp').on('click', function() {
-		    $('#eid').multiselect("selectAll");
+		    $('#eid').multiselect("selectAll", true).multiselect('refresh');
 		});
 		$('#deselectAllSamp').on('click', function() {
 		    $('#eid').multiselect("clearSelection").multiselect('refresh');
