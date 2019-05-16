@@ -72,6 +72,9 @@
 						<li><b>Dataset</b>: analysis types: Raw signals, narrow/broad peak calls (MACS2), ChromHMM states, Methylation features, Superenhancers.</li>
 						<li><b>Session</b>: pre-defined sessions (see below for details).</li>
 					</ul>
+					<br>
+					Note that not all combinations of options will work - e.g. selecting <b>Assays (Superenhancers, H3K27ac, etc.)</b> for a sample which does not have them
+					<br>	
 					These can be individually (de-)selected at the user's discretion. Use the "Deselect all" button to wipe all picked options, and if you want to select everything, pick the "All data" session.
 				</p>
 				
@@ -88,6 +91,10 @@
 						<li><b>Superenhancer analysis</b>: H3K27ac samples with MACS2 narrow peak calls, and SE calls from ROSE2.</li>
 						<li><b>Chromatin state annotation (ChromHMM)</b>: Sample and subtype consensus ChromHMM models, with all RNAseq samples.</li>
 					</ul>
+				</p>
+				
+				<p>
+					<b>Important User's Note</b>: once the session has been successfully launched in the WashU browser, you can easily modify the session's tracks and/or options and then save/share the session using their built-in app!
 				</p>
 				
 				<br><br>
@@ -114,7 +121,7 @@
 	    </div>
 	    
 		<div class="row">		
-		<button id="deselectAll" class="btn btn-default">Deselect all</button>
+		<button id="deselectAll" class="btn btn-default">Deselect all options</button>
 		<button id="selectAllSamp" class="btn btn-default">Select all samples</button>
 		<button id="deselectAllSamp" class="btn btn-default">Deselect all samples</button>
 		</div>
