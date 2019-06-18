@@ -93,13 +93,14 @@
 					</ul>
 				</p>
 				
-				<br><br>
-				
-				<p>
-					<b>Important User's Note</b>: once the session has been successfully launched in the WashU browser, you can easily modify the session's tracks and/or options and then save/share the session using their built-in tools!
-				</p>
-				
-				<br><br>
+				<br>
+	    <div class="row">		
+		<section>Select pre-defined session: <select id="session" onchange="on_change_session(this)"></select></section>
+		</div>
+
+	    <div class="row">
+			<b>Important User's Note</b>: once the session has been successfully launched in the WashU browser, you can easily modify the session's tracks and/or options and then save/share the session!
+		</div>	
 				
 	    <div class="row">
                <div class="col-sm-5">
@@ -113,15 +114,10 @@
 		<option>Methylation features</option>
 		<option>Superenhancers</option>				
 		</select></section></div>
-		<div class="col-sm-7">
-		<p>you can select some pre-defined session here, or cell line<br>Note: they are independent!!</p>
-		<section>Cell line: <select id="celline">
-			<option>foo</option>
-			<option>bar</option>
-		</select></section>
-		<section>Session: <select id="session" onchange="on_change_session(this)"></select></section></div>
-	    </div>
-	    
+		
+		<div class="row">
+		</div>	
+		
 		<div class="row">		
 		<button id="deselectAll" class="btn btn-default">Deselect all options</button>
 		<button id="selectAllSamp" class="btn btn-default">Select all samples</button>
