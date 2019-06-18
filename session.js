@@ -46,7 +46,9 @@ var sessions = {
 	// SE analysis
 	"Superenhancer analysis":{"eid":["AK066","AK071","AK076","AK089","AK091","AK100","AK124","AK139","AK142","AK149","AK153","AK156","AK158","AK173","AK178","AK183","AK199","AK213","AK216","AK231","IDH","MES","RTK_I","RTK_II","Tumour"],"assay":["H3K27ac","superenhancer"],"dataset":["Raw signals","Narrow peak","Superenhancers"]},
 	// ChromHMM analysis
-	"Chromatin state annotation (ChromHMM)":{"eid":["AK066","AK071","AK076","AK089","AK091","AK100","AK124","AK139","AK142","AK149","AK153","AK156","AK158","AK173","AK178","AK183","AK199","AK213","AK216","AK231","IDH","MES","RTK_I","RTK_II","Tumour","NBr","frontal","occipital","parietal","temporal","E067","E068","E069","E071","E072","E073","E074","E125"],"assay":["RNAseq"],"dataset":["Raw signals","Chromatin states"]}	
+	"Chromatin state annotation (ChromHMM)":{"eid":["AK066","AK071","AK076","AK089","AK091","AK100","AK124","AK139","AK142","AK149","AK153","AK156","AK158","AK173","AK178","AK183","AK199","AK213","AK216","AK231","IDH","MES","RTK_I","RTK_II","Tumour","NBr","frontal","occipital","parietal","temporal","E067","E068","E069","E071","E072","E073","E074","E125"],"assay":["RNAseq"],"dataset":["Raw signals","Chromatin states"]},
+	// Cell line data
+	"Chromatin state annotation (ChromHMM)":{"eid":["LN229 NT", "LN229 shSOX10", "ZH487 NT", "ZH487 shSOX10"],"assay":["H3K27ac","H3K4me1","H3K4me3","H3K27me3","H3K36me3","H3K9me3","RNAseq"],"dataset":["Raw signals","Narrow peak","Broad peak","Chromatin states"]}
 };
 
 

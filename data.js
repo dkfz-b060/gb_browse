@@ -77,8 +77,10 @@ var data_epg=[
 {"eid":"E125","group":"normal","groupid":5,"consolidated":"1","order":76,"color":"#999999","mnemonic":"normal.E125","name":"NH-A Astrocytes Primary Cells","info":""},
 {"eid":"LN229 NT","group":"cell_line","groupid":6,"consolidated":"1","order":77,"color":"#4DAF4A","mnemonic":"LN229.NT","name":"LN229 cell line, NT","info":""},
 {"eid":"LN229 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":78,"color":"#377EB8","mnemonic":"LN229.SH","name":"LN229 cell line, shSOX10","info":""},
-{"eid":"Tumour","group":"glioblastoma","groupid":6,"consolidated":"1","order":79,"color":"#000000","mnemonic":"pan.GB","name":"pan-glioblastoma","info":""},
-{"eid":"NBr","group":"normal","groupid":5,"consolidated":"1","order":80,"color":"#999999","mnemonic":"NBr.subtype","name":"Normal brain","info":""},
+{"eid":"ZH487 NT","group":"cell_line","groupid":6,"consolidated":"1","order":79,"color":"#4DAF4A","mnemonic":"ZH487.NT","name":"ZH487 cell line, NT","info":""},
+{"eid":"ZH487 shSOX10","group":"cell_line","groupid":6,"consolidated":"1","order":80,"color":"#377EB8","mnemonic":"ZH487.SH","name":"ZH487 cell line, shSOX10","info":""},	
+{"eid":"Tumour","group":"glioblastoma","groupid":6,"consolidated":"1","order":81,"color":"#000000","mnemonic":"pan.GB","name":"pan-glioblastoma","info":""},
+{"eid":"NBr","group":"normal","groupid":5,"consolidated":"1","order":82,"color":"#999999","mnemonic":"NBr.subtype","name":"Normal brain","info":""},
 ];
 
 var data_rep_hist_bw = 
@@ -1099,6 +1101,8 @@ var data_rna_bigwig =
 {"eid":"AK227","assay":"RNAseq","info":"","url_tail":"GSM3444609/suppl/GSM3444609_AK227_RNAseq_coverage.bigWig"},
 {"eid":"AK231","assay":"RNAseq","info":"","url_tail":"GSM3444610/suppl/GSM3444610_AK231_RNAseq_coverage.bigWig"},
 {"eid":"AK236","assay":"RNAseq","info":"","url_tail":"GSM3444611/suppl/GSM3444611_AK236_RNAseq_coverage.bigWig"},
+{"eid":"LN229 NT","assay":"RNAseq","info":"","url_tail":"GSM3444421/suppl/GSM3444421_LN229_shControl_RNAseq_coverage.bigWig"},
+{"eid":"LN229 shSOX10","assay":"RNAseq","info":"","url_tail":"GSM3444422/suppl/GSM3444422_LN229_shSOX10_RNAseq_coverage.bigWig"},
 {"eid":"frontal","assay":"RNAseq","info":"","url_tail":"GSM3444612/suppl/GSM3444612_frontal_RNAseq_coverage.bigWig"},
 {"eid":"occipital","assay":"RNAseq","info":"","url_tail":"GSM3444613/suppl/GSM3444613_occipital_RNAseq_coverage.bigWig"},
 {"eid":"parietal","assay":"RNAseq","info":"","url_tail":"GSM3444614/suppl/GSM3444614_parietal_RNAseq_coverage.bigWig"},
