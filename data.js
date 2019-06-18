@@ -558,7 +558,19 @@ var data_rep_hist_npeak =
 {"eid":"RTK_II","assay":"H3K4me1","info":"AK216","url_tail":"AK216_H3K4me1_peaks.narrowPeak.bed.gz"},
 {"eid":"RTK_II","assay":"H3K4me3","info":"AK216","url_tail":"AK216_H3K4me3_peaks.narrowPeak.bed.gz"},
 {"eid":"RTK_II","assay":"H3K9me3","info":"AK216","url_tail":"AK216_H3K9me3_peaks.narrowPeak.bed.gz"},
-]
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 NT","url_tail":"LN229_shControl_H3K27ac_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K27me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K36me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me1_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K9me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27ac_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K36me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me1_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K9me3_peaks.narrowPeak.bed.gz"},
+] 	 	
 };
 
 var data_rep_hist_bpeak = 
@@ -691,6 +703,18 @@ var data_rep_hist_bpeak =
 {"eid":"RTK_II","assay":"H3K4me1","info":"AK216","url_tail":"AK216_H3K4me1_W200-G600-FDR0.01-island.bed.gz"},
 {"eid":"RTK_II","assay":"H3K4me3","info":"AK216","url_tail":"AK216_H3K4me3_W200-G600-FDR0.01-island.bed.gz"},
 {"eid":"RTK_II","assay":"H3K9me3","info":"AK216","url_tail":"AK216_H3K9me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 NT","url_tail":"LN229_shControl_H3K27ac_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K27me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K36me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me1_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K9me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27ac_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K36me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me1_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K9me3_W200-G600-FDR0.01-island.bed.gz"},
 ]
 };
 
@@ -823,6 +847,18 @@ var data_hist_npeak =
 {"info":"RTK_II","assay":"H3K4me1","eid":"AK216","url_tail":"AK216_H3K4me1_peaks.narrowPeak.bed.gz"},
 {"info":"RTK_II","assay":"H3K4me3","eid":"AK216","url_tail":"AK216_H3K4me3_peaks.narrowPeak.bed.gz"},
 {"info":"RTK_II","assay":"H3K9me3","eid":"AK216","url_tail":"AK216_H3K9me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 NT","url_tail":"LN229_shControl_H3K27ac_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K27me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K36me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me1_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K9me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27ac_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K36me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me1_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K9me3_peaks.narrowPeak.bed.gz"},
 ]
 };
 
@@ -954,6 +990,18 @@ var data_hist_bpeak =
 {"info":"RTK_II","assay":"H3K4me1","eid":"AK216","url_tail":"AK216_H3K4me1_W200-G600-FDR0.01-island.bed.gz"},
 {"info":"RTK_II","assay":"H3K4me3","eid":"AK216","url_tail":"AK216_H3K4me3_W200-G600-FDR0.01-island.bed.gz"},
 {"info":"RTK_II","assay":"H3K9me3","eid":"AK216","url_tail":"AK216_H3K9me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 NT","url_tail":"LN229_shControl_H3K27ac_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K27me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K36me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me1_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K4me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 NT","url_tail":"LN229_shControl_H3K9me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27ac","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27ac_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K27me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K27me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K36me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K36me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me1","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me1_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K4me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me3_W200-G600-FDR0.01-island.bed.gz"},
+{"eid":"cell_line","assay":"H3K9me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K9me3_W200-G600-FDR0.01-island.bed.gz"},
 ]
 };
 
