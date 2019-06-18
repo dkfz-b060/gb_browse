@@ -210,6 +210,18 @@ var data_rep_hist_bw =
 {"eid":"AK216","assay":"H3K4me1","info":"","url_tail":"GSM3444543/suppl/GSM3444543_AK216_H3K4me1_coverage_SES_subtract.bigWig"},
 {"eid":"AK216","assay":"H3K4me3","info":"","url_tail":"GSM3444544/suppl/GSM3444544_AK216_H3K4me3_coverage_SES_subtract.bigWig"},
 {"eid":"AK216","assay":"H3K9me3","info":"","url_tail":"GSM3444545/suppl/GSM3444545_AK216_H3K9me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 NT","assay":"H3K27ac","info":"","url_tail":"GSM3444408/suppl/GSM3444408_LN229_shControl_H3K27ac_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 NT","assay":"H3K27me3","info":"","url_tail":"GSM3444409/suppl/GSM3444409_LN229_shControl_H3K27me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 NT","assay":"H3K36me3","info":"","url_tail":"GSM3444410/suppl/GSM3444410_LN229_shControl_H3K36me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 NT","assay":"H3K4me1","info":"","url_tail":"GSM3444411/suppl/GSM3444411_LN229_shControl_H3K4me1_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 NT","assay":"H3K4me3","info":"","url_tail":"GSM3444412/suppl/GSM3444412_LN229_shControl_H3K4me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 NT","assay":"H3K9me3","info":"","url_tail":"GSM3444413/suppl/GSM3444413_LN229_shControl_H3K9me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 shSOX10","assay":"H3K27ac","info":"","url_tail":"GSM3444415/suppl/GSM3444415_LN229_shSOX10_H3K27ac_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 shSOX10","assay":"H3K27me3","info":"","url_tail":"GSM3444416/suppl/GSM3444416_LN229_shSOX10_H3K27me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 shSOX10","assay":"H3K36me3","info":"","url_tail":"GSM3444417/suppl/GSM3444417_LN229_shSOX10_H3K36me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 shSOX10","assay":"H3K4me1","info":"","url_tail":"GSM3444418/suppl/GSM3444418_LN229_shSOX10_H3K4me1_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 shSOX10","assay":"H3K4me3","info":"","url_tail":"GSM3444419/suppl/GSM3444419_LN229_shSOX10_H3K4me3_coverage_SES_subtract.bigWig"},
+{"eid":"LN229 shSOX10","assay":"H3K9me3","info":"","url_tail":"GSM3444420/suppl/GSM3444420_LN229_shSOX10_H3K9me3_coverage_SES_subtract.bigWig"},
 ]
 };
 
