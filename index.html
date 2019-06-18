@@ -63,13 +63,13 @@
 				
 				<p>This webpage will generate a JSON session file, based on your selected options below, that will then be sent to the <a href="http://epigenomegateway.wustl.edu/">WashU Epigenome Browser</a> for viewing.</p>
 				
-				<h3>GB tumour data launcher</h3>
+				<h3>Genome browser session launcher</h3>
 				
 				<p>An explainer for each option:
 					<ul>
-						<li><b>Sample ID</b>: select individual tumours and normal samples, subtype consensus, and pan-GB calls.</li>
+						<li><b>Sample ID</b>: select individual tumours, normal and cell line samples, subtype consensus, and pan-GB calls.</li>
 						<li><b>Assay</b>: data types: RNAseq, WGBS, histone ChIPseq, Superenhancer and Methylation Feature (DMV, LMR, PMD) analyses.</li>
-						<li><b>Dataset</b>: analysis types: Raw signals, narrow/broad peak calls (MACS2), ChromHMM states, Methylation features, Superenhancers.</li>
+						<li><b>Dataset</b>: analysis types: Raw signals, narrow/broad peak calls (MACS/SES), ChromHMM states, Methylation features, Superenhancers.</li>
 						<li><b>Session</b>: pre-defined sessions (see below for details).</li>
 					</ul>
 					<br>
@@ -90,6 +90,7 @@
 						<li><b>Methylation data and analysis</b>: WGBS calls for all samples, with methylation feature (DMV, LMR, PMD) calls.</li>
 						<li><b>Superenhancer analysis</b>: H3K27ac samples with MACS2 narrow peak calls, and SE calls from ROSE2.</li>
 						<li><b>Chromatin state annotation (ChromHMM)</b>: Sample and subtype consensus ChromHMM models, with all RNAseq samples.</li>
+						<li><b>SOX10 cell line data (LN229/ZH487)</b>: All tracks (RNAseq, histone + TF ChIPseq) for the shSOX10 cell line models used.</li>
 					</ul>
 				</p>
 				
