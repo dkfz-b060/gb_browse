@@ -435,6 +435,8 @@ var data_chr_exp18 =
 {"eid":"E073","assay":"ChromHMM","info":"","url_tail":"E073_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E074","assay":"ChromHMM","info":"","url_tail":"E074_18_core_K27ac_stateno.bed.gz"},
 {"eid":"E067","assay":"ChromHMM","info":"","url_tail":"E067_18_core_K27ac_stateno.bed.gz"},
+{"eid":"LN229 NT","assay":"ChromHMM","info":"","url_tail":"LN229_shControl_ChromHMM_18states.bed.gz"},
+{"eid":"LN229 shSOX10","assay":"ChromHMM","info":"","url_tail":"LN229_shSOX10_ChromHMM_18states.bed.gz"},
 {"eid":"IDH","assay":"ChromHMM","info":"","url_tail":"IDH_ChromHMM_18states.bed.gz"},
 {"eid":"MES","assay":"ChromHMM","info":"","url_tail":"MES_ChromHMM_18states.bed.gz"},
 {"eid":"RTK_I","assay":"ChromHMM","info":"","url_tail":"RTK_I_ChromHMM_18states.bed.gz"},
