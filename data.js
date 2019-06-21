@@ -347,7 +347,40 @@ var data_assay= // assays
     "peak":"G",
     "desc":"DMVs, LMRs, PMDs (per subtype)",
     "rgb":"250,190,200"
-  },  
+  },
+  {
+    "name":"SOX10",
+    "order":12,
+    "view_1":"1",
+    "view_2":"1",
+    "active":"A",
+    "signal":"VeryHigh",
+    "peak":"G",
+    "desc":"SOX10 TF ChIPseq",
+    "rgb":"69,150,42"
+  },
+  {
+    "name":"BRD4",
+    "order":13,
+    "view_1":"1",
+    "view_2":"1",
+    "active":"A",
+    "signal":"VeryHigh",
+    "peak":"G",
+    "desc":"BRD4 TF ChIPseq",
+    "rgb":"24,49,124"
+  },
+  {
+    "name":"ATAC",
+    "order":14,
+    "view_1":"1",
+    "view_2":"1",
+    "active":"A",
+    "signal":"VeryHigh",
+    "peak":"G",
+    "desc":"ATACseq",
+    "rgb":"0,0,0"
+  },
   {
     "name":"Input",
     "order":35,
@@ -584,6 +617,20 @@ var data_rep_hist_npeak =
 {"eid":"cell_line","assay":"H3K4me1","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me1_peaks.narrowPeak.bed.gz"},
 {"eid":"cell_line","assay":"H3K4me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me3_peaks.narrowPeak.bed.gz"},
 {"eid":"cell_line","assay":"H3K9me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K9me3_peaks.narrowPeak.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"LN229 NT Replicate 1","url_tail":"LN229_shControl_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"LN229 NT Replicate 2","url_tail":"LN229_shControl_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"LN229 shSOX10 Replicate 1","url_tail":"LN229_shSOX10_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"LN229 shSOX10 Replicate 2","url_tail":"LN229_shSOX10_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"ZH487 NT Replicate 1","url_tail":"ZH487_shControl_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"ZH487 NT Replicate 2","url_tail":"ZH487_shControl_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"ZH487 shSOX10 Replicate 1","url_tail":"ZH487_shSOX10_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"eid":"cell_line","assay":"ATAC","info":"ZH487 shSOX10Replicate 2","url_tail":"ZH487_shSOX10_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"eid":"cell_line","assay":"SOX10","info":"LN229 NT SOX10","url_tail":"LN229_shControl_SOX10_peaks_narrowPeaks.bed.gz"},
+{"eid":"cell_line","assay":"BRD4","info":"LN229 NT BRD4","url_tail":"LN229_shControl_BRD4_peaks_narrowPeaks.bed.gz"},
+{"eid":"cell_line","assay":"BRD4","info":"LN229 shSOX10 BRD4","url_tail":"LN229_shSOX10_BRD4_peaks_narrowPeaks.bed.gz"},
+{"eid":"cell_line","assay":"SOX10","info":"ZH487 NT SOX10","url_tail":"ZH487_shControl_SOX10_peaks_narrowPeaks.bed.gz"},
+{"eid":"cell_line","assay":"BRD4","info":"ZH487 NT BRD4","url_tail":"ZH487_shControl_BRD4_peaks_narrowPeaks.bed.gz"},
+{"eid":"cell_line","assay":"BRD4","info":"ZH487 shSOX10 BRD4","url_tail":"ZH487_shSOX10_BRD4_peaks_narrowPeaks.bed.gz"},
 ] 	 	
 };
 
@@ -873,6 +920,20 @@ var data_hist_npeak =
 {"info":"cell_line","assay":"H3K4me1","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me1_peaks.narrowPeak.bed.gz"},
 {"info":"cell_line","assay":"H3K4me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K4me3_peaks.narrowPeak.bed.gz"},
 {"info":"cell_line","assay":"H3K9me3","info":"LN229 shSOX10","url_tail":"LN229_shSOX10_H3K9me3_peaks.narrowPeak.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"LN229 NT Replicate 1","url_tail":"LN229_shControl_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"LN229 NT Replicate 2","url_tail":"LN229_shControl_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"LN229 shSOX10 Replicate 1","url_tail":"LN229_shSOX10_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"LN229 shSOX10 Replicate 2","url_tail":"LN229_shSOX10_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"ZH487 NT Replicate 1","url_tail":"ZH487_shControl_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"ZH487 NT Replicate 2","url_tail":"ZH487_shControl_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"ZH487 shSOX10 Replicate 1","url_tail":"ZH487_shSOX10_ATACseq_peaks.narrowPeaks_rep1.bed.gz"},
+{"info":"cell_line","assay":"ATAC","info":"ZH487 shSOX10Replicate 2","url_tail":"ZH487_shSOX10_ATACseq_peaks.narrowPeaks_rep2.bed.gz"},
+{"info":"cell_line","assay":"SOX10","info":"LN229 NT SOX10","url_tail":"LN229_shControl_SOX10_peaks_narrowPeaks.bed.gz"},
+{"info":"cell_line","assay":"BRD4","info":"LN229 NT BRD4","url_tail":"LN229_shControl_BRD4_peaks_narrowPeaks.bed.gz"},
+{"info":"cell_line","assay":"BRD4","info":"LN229 shSOX10 BRD4","url_tail":"LN229_shSOX10_BRD4_peaks_narrowPeaks.bed.gz"},
+{"info":"cell_line","assay":"SOX10","info":"ZH487 NT SOX10","url_tail":"ZH487_shControl_SOX10_peaks_narrowPeaks.bed.gz"},
+{"info":"cell_line","assay":"BRD4","info":"ZH487 NT BRD4","url_tail":"ZH487_shControl_BRD4_peaks_narrowPeaks.bed.gz"},
+{"info":"cell_line","assay":"BRD4","info":"ZH487 shSOX10 BRD4","url_tail":"ZH487_shSOX10_BRD4_peaks_narrowPeaks.bed.gz"},
 ]
 };
 
@@ -1165,6 +1226,8 @@ var data_rna_bigwig =
 {"eid":"AK236","assay":"RNAseq","info":"","url_tail":"GSM3444611/suppl/GSM3444611_AK236_RNAseq_coverage.bigWig"},
 {"eid":"LN229 NT","assay":"RNAseq","info":"","url_tail":"GSM3444421/suppl/GSM3444421_LN229_shControl_RNAseq_coverage.bigWig"},
 {"eid":"LN229 shSOX10","assay":"RNAseq","info":"","url_tail":"GSM3444422/suppl/GSM3444422_LN229_shSOX10_RNAseq_coverage.bigWig"},
+{"eid":"ZH487 NT","assay":"RNAseq","info":"","url_tail":"GSM3898777/suppl/GSM3898777_ZH487_shControl_RNAseq_coverage.bigWig"},
+{"eid":"ZH487 shSOX10","assay":"RNAseq","info":"","url_tail":"GSM3898778/suppl/GSM3898778_ZH487_shSOX10_RNAseq_coverage.bigWig"},
 {"eid":"frontal","assay":"RNAseq","info":"","url_tail":"GSM3444612/suppl/GSM3444612_frontal_RNAseq_coverage.bigWig"},
 {"eid":"occipital","assay":"RNAseq","info":"","url_tail":"GSM3444613/suppl/GSM3444613_occipital_RNAseq_coverage.bigWig"},
 {"eid":"parietal","assay":"RNAseq","info":"","url_tail":"GSM3444614/suppl/GSM3444614_parietal_RNAseq_coverage.bigWig"},
@@ -1212,5 +1275,52 @@ var data_subtype_superenhancers =
 {"eid":"RTK_I","assay":"superenhancer","info":"RTK_I subtype SEs","url_tail":"RTK_I_subtype_H3K27ac_superenhancers.bed.gz"},
 {"eid":"RTK_II","assay":"superenhancer","info":"RTK_II-specific pan-tumour SEs (logFC 1, FDR 0.1)","url_tail":"GB_H3K27ac_superenhancers_RTK_II_specific_FDR_0.1_log2FC_1.bed.gz"},
 {"eid":"RTK_II","assay":"superenhancer","info":"RTK_II subtype SEs","url_tail":"RTK_II_subtype_H3K27ac_superenhancers.bed.gz"},
+]
+};
+
+var data_sox10_bigwig = 
+{
+	"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3898nnn/",
+"type":"bigwig",
+"info":"SOX10 ChIPseq - SES-normalized coverage",
+"color":"Black","rgb":"0,0,0",
+"data":
+[
+{"eid":"LN229 NT","assay":"SOX10","info":"","url_tail":"GSM3898771/suppl/GSM3898771_LN229_shControl_SOX10_coverage_SES_subtract.bw"},
+{"eid":"ZH487 NT","assay":"SOX10","info":"","url_tail":"GSM3898774/suppl/GSM3898774_ZH487_shControl_SOX10_coverage_SES_subtract.bw"},
+]
+};
+
+var data_brd4_bigwig = 
+{
+	"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3898nnn/",
+"type":"bigwig",
+"info":"BRD4 ChIPseq - SES-normalized coverage",
+"color":"Black","rgb":"0,0,0",
+"data":
+[
+{"eid":"LN229 NT","assay":"BRD4","info":"","url_tail":"GSM3898772/suppl/GSM3898772_LN229_shControl_BRD4_coverage_SES_subtract.bw"},
+{"eid":"LN229 shSOX10","assay":"BRD4","info":"","url_tail":"GSM3898773/suppl/GSM3898773_LN229_shSOX10_BRD4_coverage_SES_subtract.bw"},
+{"eid":"ZH487 NT","assay":"BRD4","info":"","url_tail":"GSM3898775/suppl/GSM3898775_ZH487_shControl_BRD4_coverage_SES_subtract.bw"},
+{"eid":"ZH487 shSOX10","assay":"BRD4","info":"","url_tail":"GSM3898776/suppl/GSM3898776_ZH487_shSOX10_BRD4_coverage_SES_subtract.bw"},
+]
+};
+
+var data_atac_bigwig = 
+{
+	"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3898nnn/",
+	"type":"bigwig",
+	"info":"ATACseq - genome coverage",
+	"color":"Black","rgb":"0,0,0",
+	"data":
+[
+{"eid":"LN229 NT","assay":"ATAC","info":"Replicate 1","url_tail":"GSM3898763/suppl/GSM3898763_LN229_shControl_ATACseq_coverage_rep1.bigWig"},
+{"eid":"LN229 NT","assay":"ATAC","info":"Replicate 2","url_tail":"GSM3898764/suppl/GSM3898764_LN229_shControl_ATACseq_coverage_rep2.bigWig"},
+{"eid":"LN229 shSOX10","assay":"ATAC","info":"Replicate 1","url_tail":"GSM3898765/suppl/GSM3898765_LN229_shSOX10_ATACseq_coverage_rep1.bigWig"},
+{"eid":"LN229 shSOX10","assay":"ATAC","info":"Replicate 2","url_tail":"GSM3898766/suppl/GSM3898766_LN229_shSOX10_ATACseq_coverage_rep2.bigWig"},
+{"eid":"ZH487 NT","assay":"ATAC","info":"Replicate 1","url_tail":"GSM3898767/suppl/GSM3898767_ZH487_shControl_ATACseq_coverage_rep1.bigWig"},
+{"eid":"ZH487 NT","assay":"ATAC","info":"Replicate 2","url_tail":"GSM3898768/suppl/GSM3898768_ZH487_shControl_ATACseq_coverage_rep2.bigWig"},
+{"eid":"ZH487 shSOX10","assay":"ATAC","info":"Replicate 1","url_tail":"GSM3898769/suppl/GSM3898769_ZH487_shSOX10_ATACseq_coverage_rep1.bigWig"},
+{"eid":"ZH487 shSOX10","assay":"ATAC","info":"Replicate 2","url_tail":"GSM3898770/suppl/GSM3898770_ZH487_shSOX10_ATACseq_coverage_rep2.bigWig"},
 ]
 };

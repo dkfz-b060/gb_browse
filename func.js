@@ -758,6 +758,12 @@ function on_submit()
 		data.push(data_subtype_methyl_features);
 	else if (the_data == "Superenhancers")
 		data.push(data_subtype_superenhancers);
+	else if (the_data == "ATAC")
+		data.push(data_atac_bigwig);
+	else if (the_data == "SOX10")
+		data.push(data_sox10_bigwig);
+	else if (the_data == "BRD4")
+		data.push(data_brd4_bigwig);
 	}
 	visualize_data( data, filter, embed_id, false, 'hg19' );
 
@@ -859,6 +865,9 @@ function init_rep_hist()
 	big_data.data = big_data.data.concat(data_rna_bigwig.data);
 	big_data.data = big_data.data.concat(data_subtype_methyl_features.data);
 	big_data.data = big_data.data.concat(data_subtype_superenhancers.data);
+	big_data.data = big_data.data.concat(data_atac_bigwig.data);
+	big_data.data = big_data.data.concat(data_sox10_bigwig.data);
+	big_data.data = big_data.data.concat(data_brd4_bigwig.data);
 	big_data.info = "";
 	// consolidated epg
 	populate_dropdown_by_eid(  "eid", [big_data]);
