@@ -758,7 +758,7 @@ function on_submit()
 		data.push(data_subtype_methyl_features);
 	else if (the_data == "Superenhancers")
 		data.push(data_subtype_superenhancers);
-	else if (the_data == "ATAC")
+	else if (the_data == "ATAC-seq")
 		data.push(data_atac_bigwig);
 	else if (the_data == "SOX10")
 		data.push(data_sox10_bigwig);
@@ -944,4 +944,19 @@ function onchange_ddl_assay_rep_subtype_methyl_features(dropdown)
 function onchange_ddl_eid_rep_subtype_methyl_features(dropdown)
 {
 	return onchange_dropdown_by_eid(dropdown, [data_subtype_methyl_features], "ddl_assay_rep_subtype_methyl_features", "chkbox_new_page_subtype_methyl_features", "embed_rep_subtype_methyl_features" );
+}
+
+function onchange_ddl_eid_rep_atac_bigwig(dropdown)
+{
+	return onchange_dropdown_by_eid(dropdown, [data_atac_bigwig], "ddl_assay_rep_atac_bigwig", "chkbox_new_page_atac_bigwig", "embed_rep_atac_bigwig" );
+}
+
+function onchange_ddl_eid_rep_sox10_bigwig(dropdown)
+{
+	return onchange_dropdown_by_eid(dropdown, [data_sox10_bigwig], "ddl_assay_rep_sox10_bigwig", "chkbox_new_page_sox10_bigwig", "embed_rep_sox10_bigwig" );
+}
+
+function onchange_ddl_eid_rep_brd4_bigwig(dropdown)
+{
+	return onchange_dropdown_by_eid(dropdown, [data_brd4_bigwig], "ddl_assay_rep_brd4_bigwig", "chkbox_new_page_brd4_bigwig", "embed_rep_brd4_bigwig" );
 }
