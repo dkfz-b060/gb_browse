@@ -239,17 +239,6 @@ var data_assay= // assays
     "rgb":"205,92,92"
   },
   {
-  "name":"superenhancer",
-  "order":2,
-  "view_1":"1",
-  "view_2":"0",
-  "active":"A",
-  "signal":"H",
-  "peak":"G",
-  "desc":"Superenhancers",
-  "rgb":"127,255,212"
-	},  
-  {
     "name":"H3K4me3",
     "order":3,
     "view_1":"1",
@@ -349,6 +338,28 @@ var data_assay= // assays
     "rgb":"250,190,200"
   },
   {
+    "name":"Input",
+    "order":35,
+    "view_1":"1",
+    "view_2":"0",
+    "active":"?",
+    "signal":"?",
+    "peak":"?",
+    "desc":"Control",
+    "rgb":"128,128,128"
+  },
+  {
+  "name":"superenhancer",
+  "order":2,
+  "view_1":"1",
+  "view_2":"0",
+  "active":"A",
+  "signal":"H",
+  "peak":"G",
+  "desc":"Superenhancers",
+  "rgb":"127,255,212"
+  },
+  {
     "name":"SOX10",
     "order":12,
     "view_1":"1",
@@ -380,18 +391,7 @@ var data_assay= // assays
     "peak":"G",
     "desc":"ATACseq",
     "rgb":"0,0,0"
-  },
-  {
-    "name":"Input",
-    "order":35,
-    "view_1":"1",
-    "view_2":"0",
-    "active":"?",
-    "signal":"?",
-    "peak":"?",
-    "desc":"Control",
-    "rgb":"128,128,128"
-  },
+  }
 ];
 
 var data_chr_state_18 = 
@@ -1280,7 +1280,7 @@ var data_subtype_superenhancers =
 
 var data_sox10_bigwig = 
 {
-	"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3898nnn/",
+"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3898nnn/",
 "type":"bigwig",
 "info":"SOX10 ChIPseq - SES-normalized coverage",
 "color":"Black","rgb":"0,0,0",
@@ -1293,7 +1293,7 @@ var data_sox10_bigwig =
 
 var data_brd4_bigwig = 
 {
-	"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3898nnn/",
+"url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3898nnn/",
 "type":"bigwig",
 "info":"BRD4 ChIPseq - SES-normalized coverage",
 "color":"Black","rgb":"0,0,0",
