@@ -743,26 +743,26 @@ function on_submit()
 	if (the_data == "Histone marks") {
 		data.push(data_rep_hist_bw);
 		data.push(data_hist_npeak);
-		filter.push([{eid: "LN229 NT", assay: "H3K4me1"},{eid: "LN229 NT", assay: "H3K4me3"},{eid: "LN229 NT", assay: "H3K9me3"},{eid: "LN229 NT", assay: "H3K36me3"},{eid: "LN229 NT", assay: "H3K27me3"},{eid: "LN229 NT", assay: "H3K27ac"},{eid: "LN229 shSOX10", assay: "H3K4me1"},{eid: "LN229 shSOX10", assay: "H3K4me3"},{eid: "LN229 shSOX10", assay: "H3K9me3"},{eid: "LN229 shSOX10", assay: "H3K36me3"},{eid: "LN229 shSOX10", assay: "H3K27me3"},{eid: "LN229 shSOX10", assay: "H3K27ac"},{eid: "cell_line", assay: "H3K4me1"},{eid: "cell_line", assay: "H3K4me3"},{eid: "cell_line", assay: "H3K9me3"},{eid: "cell_line", assay: "H3K36me3"},{eid: "cell_line", assay: "H3K27me3"},{eid: "cell_line", assay: "H3K27ac"}]);
+		filter.push({eid: "LN229 NT", assay: "H3K4me1"},{eid: "LN229 NT", assay: "H3K4me3"},{eid: "LN229 NT", assay: "H3K9me3"},{eid: "LN229 NT", assay: "H3K36me3"},{eid: "LN229 NT", assay: "H3K27me3"},{eid: "LN229 NT", assay: "H3K27ac"},{eid: "LN229 shSOX10", assay: "H3K4me1"},{eid: "LN229 shSOX10", assay: "H3K4me3"},{eid: "LN229 shSOX10", assay: "H3K9me3"},{eid: "LN229 shSOX10", assay: "H3K36me3"},{eid: "LN229 shSOX10", assay: "H3K27me3"},{eid: "LN229 shSOX10", assay: "H3K27ac"},{eid: "cell_line", assay: "H3K4me1"},{eid: "cell_line", assay: "H3K4me3"},{eid: "cell_line", assay: "H3K9me3"},{eid: "cell_line", assay: "H3K36me3"},{eid: "cell_line", assay: "H3K27me3"},{eid: "cell_line", assay: "H3K27ac"});
 	} else if (the_data == "SOX10-TF ChIP-seq") {
 		data.push(data_sox10_bigwig);
 		data.push(data_hist_npeak);
-		filter.push([{"eid":"LN229 NT","assay":"SOX10"},{"eid":"ZH487 NT","assay":"SOX10"},{"eid":"cell_line","assay":"SOX10"}])
+		filter.push({"eid":"LN229 NT","assay":"SOX10"},{"eid":"ZH487 NT","assay":"SOX10"},{"eid":"cell_line","assay":"SOX10"})
 	} else if (the_data == "Chromatin states") {
 		data.push(data_chr_exp18);
-		filter.push([{"eid":"LN229 NT","assay":"ChromHMM"},{"eid":"LN229 shSOX10","assay":"ChromHMM"}])
+		filter.push({"eid":"LN229 NT","assay":"ChromHMM"},{"eid":"LN229 shSOX10","assay":"ChromHMM"})
 	} else if (the_data == "ATAC-seq") {
 		data.push(data_atac_bigwig);
 		data.push(data_hist_npeak);
-		filter.push([{"eid":"LN229 NT","assay":"ATAC"},{"eid":"LN229 shSOX10","assay":"ATAC"},{"eid":"ZH487 NT","assay":"ATAC"},{"eid":"ZH487 shSOX10","assay":"ATAC"},{"eid":"cell_line","assay":"ATAC"}])
+		filter.push({"eid":"LN229 NT","assay":"ATAC"},{"eid":"LN229 shSOX10","assay":"ATAC"},{"eid":"ZH487 NT","assay":"ATAC"},{"eid":"ZH487 shSOX10","assay":"ATAC"},{"eid":"cell_line","assay":"ATAC"})
 	} else if (the_data == "RNA-seq") {
 		data.push(data_rna_bigwig);
-		filter.push([{"eid":"LN229 NT","assay":"RNAseq"},{"eid":"LN229 shSOX10","assay":"RNAseq"},{"eid":"ZH487 NT","assay":"RNAseq"},{"eid":"ZH487 shSOX10","assay":"RNAseq"}])
+		filter.push({"eid":"LN229 NT","assay":"RNAseq"},{"eid":"LN229 shSOX10","assay":"RNAseq"},{"eid":"ZH487 NT","assay":"RNAseq"},{"eid":"ZH487 shSOX10","assay":"RNAseq"})
 	} else if (the_data == "BRD4") {
 		data.push(data_brd4_bigwig);
 		data.push(data_hist_npeak);
-		filter.push([{"eid":"LN229 NT","assay":"BRD4"},{"eid":"LN229 shSOX10","assay":"BRD4"},{"eid":"ZH487 NT","assay":"BRD4"},
-{"eid":"ZH487 shSOX10","assay":"BRD4"},{"eid":"cell_line","assay":"BRD4"}])
+		filter.push({"eid":"LN229 NT","assay":"BRD4"},{"eid":"LN229 shSOX10","assay":"BRD4"},{"eid":"ZH487 NT","assay":"BRD4"},
+{"eid":"ZH487 shSOX10","assay":"BRD4"},{"eid":"cell_line","assay":"BRD4"})
 	}
 	} 	
 	visualize_data( data, filter, embed_id, false, genome_build );
