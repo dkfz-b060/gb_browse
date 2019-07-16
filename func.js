@@ -1,7 +1,6 @@
 // to change track name width -> in ../browser/sukn.js, browser.leftColumnWidth=210;
 var _DEBUG_ = false;
 var just_changed_celline = false;
-const genome_build = 'hg19';
 
 var tmp_json_url 	= "https://egg2.wustl.edu/web_portal_cache/";
 //var tmp_json_url 	= "https://mitra.stanford.edu/kundaje/leepc12/web_portal_cache/";
@@ -765,7 +764,7 @@ function on_submit()
 {"eid":"ZH487 shSOX10","assay":"BRD4"},{"eid":"cell_line","assay":"BRD4"})
 	}
 	} 	
-	visualize_data( data, filter, embed_id, false, genome_build );
+	visualize_data( data, filter, embed_id, false, 'hg19' );
 	just_changed_celline = false;
 	return true;
 	}
