@@ -613,6 +613,12 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 				obj[ "metadata" ] = metadata;
 				obj.url  = data[k].url_head + data_elem.url_tail;
 
+				if (maxHeight["20"].indexOf(obj.url) > -1)
+					obj.qtc[ "thmax" ] = 20;
+
+				if (maxHeight["50"].indexOf(obj.url) > -1)
+					obj.qtc[ "thmax" ] = 50;
+
 				json_current.push(obj);
 			}
 		}
