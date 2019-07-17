@@ -828,13 +828,22 @@ function init_sessions( elem_id, data ) {
 }
 
 function on_change_session () {
-	let saved_data = sessions[$("#session").val()];
-	for(const key in saved_data) {
-		$('#'+key).multiselect("clearSelection").multiselect('refresh');
-		for(const d of saved_data[key]) {
-			$('#'+key).multiselect('select', d);
+	let i = 0;
+	if ($("#session").val() == undefined) {
+		$('#deselectAll').click();
+		return;
+	}
+	for(const sk of $("#session").val()) {
+		let saved_data = sessions[sk];
+		for(const key in saved_data) {
+			if (i==0)
+				$('#'+key).multiselect("clearSelection").multiselect('refresh');
+			for(const d of saved_data[key]) {
+				$('#'+key).multiselect('select', d);
+			}
 		}
-	}	
+		i++;
+	}
 }
 
 function on_change_celline () {
