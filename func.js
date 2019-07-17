@@ -828,21 +828,19 @@ function init_sessions( elem_id, data ) {
 }
 
 function on_change_session () {
-	let i = 0;
 	if ($("#session").val() == undefined) {
 		$('#deselectAll').click();
 		return;
 	}
+	for(const mk of ['eid','assay','dataset']) 
+		$('#'+mk).multiselect("clearSelection").multiselect('refresh');
 	for(const sk of $("#session").val()) {
 		let saved_data = sessions[sk];
 		for(const key in saved_data) {
-			if (i==0)
-				$('#'+key).multiselect("clearSelection").multiselect('refresh');
 			for(const d of saved_data[key]) {
 				$('#'+key).multiselect('select', d);
 			}
 		}
-		i++;
 	}
 }
 
