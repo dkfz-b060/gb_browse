@@ -419,13 +419,35 @@ var data_chr_state_18 =
 var data_wubrowser_json_base = 
 [
    {
-      "type":"native_track",
-      "list":[
-         {
-            "name":"refGene",
-            "mode":"full",
-         }
-      ]
+       "type":"native_track",
+       "list":[
+          {
+             "name":"refGene",
+             "mode":3,
+             "qtc":{
+                "anglescale":1,
+                "pr":255,
+                "pg":0,
+                "pb":0,
+                "nr":0,
+                "ng":0,
+                "nb":230,
+                "pth":"#800000",
+                "nth":"#000099",
+                "thtype":0,
+                "thmin":0,
+                "thmax":10,
+                "thpercentile":95,
+                "height":50,
+                "summeth":1,
+                "textcolor":"#000000",
+                "fontsize":"8pt",
+                "fontfamily":"sans-serif",
+                "fontbold":false,
+                "bedcolor":"#002EB8"
+             }
+          }
+       ]
    },
    {
       "type":"coordinate_override",
