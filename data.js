@@ -1161,7 +1161,7 @@ var data_rna_bigwig =
 "url_head":"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3444nnn/",
 "type":"bigwig",
 "info":"Normalized coverage for stranded libraries",
-"color":"Black","rgb":"0,0,0",
+"colorpositive":"#0000FF","colornegative":"#FF0000",
 "data":
 [
 {"eid":"AK002","assay":"RNAseq","info":"","url_tail":"GSM3444552/suppl/GSM3444552_AK002_RNAseq_coverage.bigWig"},
