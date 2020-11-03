@@ -44,6 +44,7 @@
     <![endif]-->
 
     <script src="./session.js"></script>
+    <script src="./custom.js"></script>
     <script src="./data.js"></script>
     <script src="./func.js"></script>
 
@@ -54,7 +55,7 @@
   <body role="document">
     <div id="header"></div>
     <div class="container-fluid theme-showcase" role="main" id="body">
-      <div class="page-header" style="width: 60%; margin: 0 auto">
+      <div class="page-header" style="width: 66%; margin: 0 auto">
           <a name="ChipSeq_DNaseSeq"></a>
           <h1>Glioblastoma</h1>
             <h2>Genome Browser</h2>
@@ -101,17 +102,30 @@
 		<br>
 				
 	    <div class="row">		
-		<section><b>Select pre-defined session:</b>   <select id="session" onchange="on_change_session(this)"></select></section>
+               <div class="col-sm-6">
+		<section><b>Select GB session:</b>   <select id="session" onchange="on_change_session(this)" multiple="multiple"></select></section>
+		</div>	
+               <div class="col-sm-6">
+		<section><b>or cell lines (SOX10 NT vs. KD):</b> <select id="celline" onchange="on_change_celline(this)" multiple="multiple">
+		<option>Histone marks</option>
+		<option>SOX10-TF ChIP-seq</option>
+		<option>BRD4</option>
+		<option>ATAC-seq</option>
+		<option>RNA-seq</option>
+		<option>Chromatin states</option>
+		</select>
+		</section>
 		</div>
+	    </div>
 
 		<br>
 
 	    <div class="row">
-			<section><b>Or, manually define tracks:</b> (note: selecting a session above will change selections below!)</section>
+			<section><b>Or, manually define GB tracks:</b> (note: selecting a session above will change selections below!)</section>
 		</div>	
 						
 	    <div class="row">
-               <div class="col-sm-5">
+               <div class="col-sm-6">
                <section>Sample ID: <select id="eid" multiple="multiple"></select></section>
                <section>Assay: <select id="assay" multiple="multiple"></select></section>
                <section>Dataset: <select id="dataset" multiple="multiple">
@@ -121,9 +135,6 @@
 		<option>Chromatin states</option>
 		<option>Methylation features</option>
 		<option>Superenhancers</option>	
-		<option>ATAC-seq</option>
-		<option>SOX10</option>
-		<option>BRD4</option>
 		</select></section></div>
 		
 		<div class="row">
@@ -141,6 +152,7 @@
 		</div>		
 		
 		<div id="panel1" style="margin:20px;border:solid 2px green;display:none;" ></div>
+		<div id="panel2" style="margin:20px;border:solid 2px green;display:none;" ></div>
 	    </div>
               <script>
                 init_rep_hist();
@@ -154,9 +166,8 @@
 		    $('#eid').multiselect("clearSelection").multiselect('refresh');
 		    $('#assay').multiselect("clearSelection").multiselect('refresh');
 		    $('#dataset').multiselect("clearSelection").multiselect('refresh');
-		    //$('#session').multiselect("clearSelection").multiselect('refresh');
+		    $('#session').multiselect("clearSelection").multiselect('refresh');
 		});
-		// this button doesn't work yet!
 		$('#selectAllSamp').on('click', function() {
 		    $('#eid').multiselect("selectAll", false).multiselect('refresh');
 		});

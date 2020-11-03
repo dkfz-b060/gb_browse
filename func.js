@@ -1,5 +1,6 @@
 // to change track name width -> in ../browser/sukn.js, browser.leftColumnWidth=210;
 var _DEBUG_ = false;
+var just_changed_celline = false;
 
 var tmp_json_url 	= "https://egg2.wustl.edu/web_portal_cache/";
 //var tmp_json_url 	= "https://mitra.stanford.edu/kundaje/leepc12/web_portal_cache/";
@@ -612,6 +613,9 @@ function generate_json( data, filter, sort ) // data is an array of json objects
 				obj[ "metadata" ] = metadata;
 				obj.url  = data[k].url_head + data_elem.url_tail;
 
+				if (obj.url in maxHeight)
+					obj.qtc[ "thmax" ] = maxHeight[obj.url];
+
 				json_current.push(obj);
 			}
 		}
@@ -734,6 +738,40 @@ function populate_dropdown_by_assay( elem_id, data ) {
 
 function on_submit()
 {
+	if (just_changed_celline) {
+	var embed_id = $('#chkbox_new_page').is(':checked') ? null : "panel2";
+	let filter = [], data = [];
+	for (const the_data of $('#celline').val()) {
+	if (the_data == "Histone marks") {
+		data.push(data_rep_hist_bw);
+		data.push(data_hist_npeak);
+		filter.push({eid: "LN229 NT", assay: "H3K4me1"},{eid: "LN229 NT", assay: "H3K4me3"},{eid: "LN229 NT", assay: "H3K9me3"},{eid: "LN229 NT", assay: "H3K36me3"},{eid: "LN229 NT", assay: "H3K27me3"},{eid: "LN229 NT", assay: "H3K27ac"},{eid: "LN229 shSOX10", assay: "H3K4me1"},{eid: "LN229 shSOX10", assay: "H3K4me3"},{eid: "LN229 shSOX10", assay: "H3K9me3"},{eid: "LN229 shSOX10", assay: "H3K36me3"},{eid: "LN229 shSOX10", assay: "H3K27me3"},{eid: "LN229 shSOX10", assay: "H3K27ac"},{eid: "cell_line", assay: "H3K4me1"},{eid: "cell_line", assay: "H3K4me3"},{eid: "cell_line", assay: "H3K9me3"},{eid: "cell_line", assay: "H3K36me3"},{eid: "cell_line", assay: "H3K27me3"},{eid: "cell_line", assay: "H3K27ac"});
+	} else if (the_data == "SOX10-TF ChIP-seq") {
+		data.push(data_sox10_bigwig);
+		data.push(data_hist_npeak);
+		filter.push({"eid":"LN229 NT","assay":"SOX10"},{"eid":"ZH487 NT","assay":"SOX10"},{"eid":"cell_line","assay":"SOX10"})
+	} else if (the_data == "Chromatin states") {
+		data.push(data_chr_exp18);
+		filter.push({"eid":"LN229 NT","assay":"ChromHMM"},{"eid":"LN229 shSOX10","assay":"ChromHMM"})
+	} else if (the_data == "ATAC-seq") {
+		data.push(data_atac_bigwig);
+		data.push(data_hist_npeak);
+		filter.push({"eid":"LN229 NT","assay":"ATAC"},{"eid":"LN229 shSOX10","assay":"ATAC"},{"eid":"ZH487 NT","assay":"ATAC"},{"eid":"ZH487 shSOX10","assay":"ATAC"},{"eid":"cell_line","assay":"ATAC"})
+	} else if (the_data == "RNA-seq") {
+		data.push(data_rna_bigwig);
+		filter.push({"eid":"LN229 NT","assay":"RNAseq"},{"eid":"LN229 shSOX10","assay":"RNAseq"},{"eid":"ZH487 NT","assay":"RNAseq"},{"eid":"ZH487 shSOX10","assay":"RNAseq"})
+	} else if (the_data == "BRD4") {
+		data.push(data_brd4_bigwig);
+		data.push(data_hist_npeak);
+		filter.push({"eid":"LN229 NT","assay":"BRD4"},{"eid":"LN229 shSOX10","assay":"BRD4"},{"eid":"ZH487 NT","assay":"BRD4"},
+{"eid":"ZH487 shSOX10","assay":"BRD4"},{"eid":"cell_line","assay":"BRD4"})
+	}
+	} 	
+	visualize_data( data, filter, embed_id, false, 'hg19' );
+	just_changed_celline = false;
+	return true;
+	}
+
 	var embed_id = $('#chkbox_new_page').is(':checked') ? null : "panel1";
 	let filter = [], data = [];
 	for (const the_eid of $('#eid').val()) {
@@ -787,13 +825,24 @@ function init_sessions( elem_id, data ) {
 }
 
 function on_change_session () {
-	let saved_data = sessions[$("#session").val()];
-	for(const key in saved_data) {
-		$('#'+key).multiselect("clearSelection").multiselect('refresh');
-		for(const d of saved_data[key]) {
-			$('#'+key).multiselect('select', d);
+	if ($("#session").val() == undefined) {
+		$('#deselectAll').click();
+		return;
+	}
+	for(const mk of ['eid','assay','dataset']) 
+		$('#'+mk).multiselect("clearSelection").multiselect('refresh');
+	for(const sk of $("#session").val()) {
+		let saved_data = sessions[sk];
+		for(const key in saved_data) {
+			for(const d of saved_data[key]) {
+				$('#'+key).multiselect('select', d);
+			}
 		}
-	}	
+	}
+}
+
+function on_change_celline () {
+	just_changed_celline = true;
 }
 
 function onchange_dropdown_by_eid(dropdown, data, paired_ddl_id, chkbox_id, embed_id, genome )
